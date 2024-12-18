@@ -26,7 +26,7 @@ export default function HeroSection({ headerText, normalText, imageLocation,maxW
       
       {/* Content Overlay */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[600px] lg:min-h-[990px] text-center px-4 bg-black/20">
-        <h1 className="text-4xl md:text-6xl lg:text-[90px] font-bold text-white mb-4 max-w-4xl leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-[90px] font-bold text-white mb-4 max-w-7xl leading-tight">
          {headerText}
         </h1>
         

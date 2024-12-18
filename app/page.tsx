@@ -1,6 +1,6 @@
 'use client'
-import { useState } from "react";
-import FeaturedLocations from "./components/HomeComponents/FeaturedLocations/FeaturedLocations";
+// import { useState } from "react";
+import FeaturedLocations from "./components/HomeComponents/FeaturedLocations";
 import FeaturesSection from "./components/HomeComponents/FeaturesSection/FeaturesSection";
 import HeroSection from "./components/HomeComponents/HeroSection/HeroSection";
 import LuxuryAdventure from "./components/HomeComponents/LuxuryAdventure/LuxuryAdventure";
@@ -18,6 +18,7 @@ export default function Page() {
       <FeaturedLocations/>
       <LuxuryAdventure/>
       <WhereToNext/>
+      {/* <FeaturedLocations/> */}
       {/* <div className="">
         <SVGComponent />
        
