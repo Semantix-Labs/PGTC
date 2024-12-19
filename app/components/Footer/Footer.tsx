@@ -51,7 +51,7 @@ export default function Footer() {
           {/* About PGTC Section */}
           <div className="space-y-4">
             <h3 className="text-customGreen font-semibold text-xl">About PGTC</h3>
-            <ul className="space-y-2 text-[#393939]">
+            <ul className="md:space-y-2 text-[#393939] grid grid-cols-2 lg:grid-cols-1">
               {["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"].map((item, index) => (
                 <li key={index}>
                   <Link href="#" className="hover:text-customGreen transition-colors">
@@ -65,7 +65,7 @@ export default function Footer() {
           {/* Booking Policy Section */}
           <div className="space-y-4">
             <h3 className="text-customGreen font-semibold text-xl">Booking Policy</h3>
-            <ul className="space-y-2 text-[#393939]">
+            <ul className="md:space-y-2 text-[#393939] grid grid-cols-2 lg:grid-cols-1">
               {["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"].map((item, index) => (
                 <li key={index}>
                   <Link href="#" className="hover:text-customGreen transition-colors">

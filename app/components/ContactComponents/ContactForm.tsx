@@ -123,11 +123,12 @@ export default function ContactForm() {
             </div>
             <div className="bg-customLightGreen">
                 <div className="container mx-auto px-4 py-16">
-                    <div className="w-full mx-auto rounded-lg p-8">
+                    <div className="w-full mx-auto rounded-lg md:p-8">
                         <form
                             action={handleSubmit}
-                            className="grid grid-cols-1 md:grid-cols-2 text-customGray gap-6 max-w-7xl"
+                            className="flex-row space-y-6 md:grid md:grid-cols-2 md:space-y-0 text-customGray gap-6 "
                         >
+                            <div className="col-span-1">
                             <Input
                                 type="text"
                                 name="name"
@@ -136,22 +137,28 @@ export default function ContactForm() {
                                 disabled={isLoading}
                                 className="bg-white border-none rounded-[36px] pl-5 text-customGray pt-3"
                             />
-                            <Input
+                            </div>
+
+                            <div> <Input
                                 type="email"
                                 name="email"
                                 placeholder="Email"
                                 required
                                 disabled={isLoading}
                                 className="bg-white border-none rounded-[36px] pl-5 pt-3"
-                            />
-                            <Input
+                            /></div>
+                            <div> <Input
                                 type="tel"
                                 name="phone"
                                 placeholder="Phone"
                                 required
                                 disabled={isLoading}
                                 className="bg-white border-none rounded-[36px] pl-5 pt-3"
-                            />
+                            /></div>
+                            
+                            
+                           
+                           
                             <Select
                                 name="country"
                                 value={selectedCountry}

@@ -33,8 +33,8 @@ export default function InfoCard({
           exit={{ opacity: 0, scale: 0.8 }}
           transition={{ duration: 0.3 }}
         >
-          <Card className="overflow-hidden rounded-lg pb-2 bg-white shadow-lg">
-            <div className="relative  h-48 w-full">
+          <Card className="overflow-hidden mt-40 md:mt-48  mx-auto w-56 md:w-80 h-full rounded-lg pb-2 bg-white shadow-lg">
+            <div className="relative  h-32 w-56 md:h-48 md:w-full">
               <Image
                 src={imageLocation}
                 alt={title}
@@ -44,26 +44,26 @@ export default function InfoCard({
               />
               <div className="absolute inset-0 bg-black/30">
                 <CardHeader className="relative z-10">
-                  <h2 className="text-center text-3xl font-bold text-white">{title}</h2>
+                  <h2 className="text-center text-[14px]  md:text-3xl font-bold text-white">{title}</h2>
                 </CardHeader>
               </div>
             </div>
             <CardContent className="p-4">
-              <p className="mb-4 text-sm text-[#C7A041]">
+              <p className="mb-4 text-[10px] md:text-sm text-[#C7A041]">
                 {description}
               </p>
               <div className="grid grid-cols-2 gap-2">
                 {activities.map((activity, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <Circle className="h-3 w-3 fill-current text-customGreen" />
-                    <span className="text-[16px] text-[#393939]">{activity}</span>
+                    <span className="text-[12px] md:text-[16px] text-[#393939]">{activity}</span>
                   </div>
                 ))}
               </div>
             </CardContent>
             <div className="flex justify-center">
                     <button
-                      className="px-6 py-2 border-2 border-customGreen text-customGreen rounded-[12px] hover:bg-customLightGreen transition-colors"
+                      className="px-6 py-2 border-2 text-[12px] md:text-[16px] border-customGreen text-customGreen rounded-[12px] hover:bg-customLightGreen transition-colors"
                       onClick={() => router.push(locationUrl)}
                     >
                       More Info

@@ -85,7 +85,7 @@ export default function FeaturedLocations() {
             {getVisibleCards().map((location, index) => (
               <div
                 key={`${location.id}-${index}`}
-                className={`bg-white xl:w-[282px] h-[240px] w-full xl:h-[400px] rounded-3xl border-[#C7A041] border-[2px] overflow-hidden  md:w-[calc(33.333%-1rem)] transition-all duration-500 ${
+                className={`bg-white xl:w-[282px] lg:h-[240px] w-full xl:h-[400px] rounded-3xl border-[#C7A041] border-[2px] overflow-hidden  md:w-[calc(33.333%-1rem)] transition-all duration-500 ${
                   index === 1 ? 'block' : 'hidden md:block'
                 }`}
               >

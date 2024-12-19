@@ -77,7 +77,7 @@ const SVGComponent: React.FC = () => {
 
     return (
         <div className='relative md:py-28'>
-         <h2 className='text-2xl md:text-[42px] text-customGreen font-bold mb-8 text-center'>Tours</h2>
+         <h2 className='text-3xl md:text-[42px] text-customGreen font-bold my-8 text-center'>Tours</h2>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="auto"
