@@ -8,17 +8,17 @@ export default function page() {
   return (
    <div className=" ">
     
-     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="" normalText="This golf haven, nestled in the heart of the city, offers a unique experience with its rich history, reflected in the old clubhouse walls. As the second-oldest Royal Golf Club outside the UK, it features a course bisected by an active rail line. Despite its urban surroundings, the course thrives with vibrant nature. Birds flock to the links, and wildlife roams freely, creating a perfect blend of city and nature." imageLocation="/home.png"/>
+     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Royal Colombo GC" normalText="This golf haven, nestled in the heart of the city, offers a unique experience with its rich history, reflected in the old clubhouse walls. As the second-oldest Royal Golf Club outside the UK, it features a course bisected by an active rail line. Despite its urban surroundings, the course thrives with vibrant nature. Birds flock to the links, and wildlife roams freely, creating a perfect blend of city and nature." imageLocation="/home.png"/>
      <Overview  details={[
-      { label: 'Name', value: 'Shangri La’s Hambantota Golf & Spa', valueColor: 'text-customGold' },
-      { label: 'Location', value: 'Hamabntota , Sri Lanka ', valueColor: 'text-customGold' },
-      { label: 'Established', value: '2016', valueColor: 'text-customGold' },
-      { label: 'Fairways', value: 'Seashore Paspalum', valueColor: 'text-customGold' },
+      { label: 'Name', value: 'Royal Colombo Golf Club (RCGC)', valueColor: 'text-customGold' },
+      { label: 'Location', value: 'Colombo , Sri Lanka', valueColor: 'text-customGold' },
+      { label: 'Established', value: '1879', valueColor: 'text-customGold' },
+      { label: 'Fairways', value: 'Native cow grass', valueColor: 'text-customGold' },
       { label: 'Other', value: "Caddys are available, Pro shop, Not busy on weekdays", valueColor: 'text-customGold' },
-      { label: 'Pair', value: '70', valueColor: 'text-customGold' },
-      { label: 'Slope rating', value: '68.9 / 127 Blue Tees', valueColor: 'text-customGold' },
-      { label: 'Greens', value: 'Paspalum Do', valueColor: 'text-customGold' },
-      { label: 'Description', value: 'Sea side resort course, From a disused sapphire mine', valueColor: 'text-customGold' },
+      { label: 'Pair', value: '71', valueColor: 'text-customGold' },
+      { label: 'Slope rating', value: '71.3/127', valueColor: 'text-customGold' },
+      { label: 'Greens', value: 'TIFEAGLE', valueColor: 'text-customGold' },
+      { label: 'Description', value: 'City parkland course, Second oldest Royal golf club outside the UK', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[
   {
