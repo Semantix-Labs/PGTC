@@ -37,6 +37,7 @@ export default function FeaturesSection() {
               <h3 className="text-2xl font-bold text-start text-customGold mb-4">
                 {feature.title}
               </h3>
+              
               <p className="text-customGreen text-[16px] text-start leading-relaxed">
                 {feature.description}
               </p>

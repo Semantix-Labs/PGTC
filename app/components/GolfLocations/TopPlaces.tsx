@@ -10,52 +10,56 @@ const places = [
     name: 'KANDY',
     mainImage:  '/TopPlace/kandy.png',
     subImages: [
-      '/TopPlace/kandy.png',
-      '/TopPlace/kandy.png',
-      '/TopPlace/kandy.png',
-      '/TopPlace/kandy.png',
+      '/TopPlace/kandy/1.png',
+      '/TopPlace/kandy/2.jpeg',
+      '/TopPlace/kandy/3.jpeg',
+      '/TopPlace/kandy/4.jpeg',
     
     ],
     subNames: ['SRI DALADA MALIGAWA', 'PERADENIYA GARDEN', 'KANDY LAKE', 'KANDY MUSEUM'],
   },
   {
     id: 2,
-    name: 'SIGIRIYA',
+    name: 'NUWARAELIYA',
     mainImage: '/TopPlace/sigiriya.jpeg',
     subImages: [
-      '/TopPlace/sigiriya.jpeg',
-      '/TopPlace/sigiriya.jpeg',
-      '/TopPlace/sigiriya.jpeg',
-      '/TopPlace/sigiriya.jpeg',
+      
+      '/TopPlace/nuwara/1.png',
+      '/TopPlace/nuwara/2.png',
+      '/TopPlace/nuwara/3.png',
+      '/TopPlace/nuwara/4.png',
+     
     
     ],
-    subNames: ['LION ROCK', 'PIDURANGALA', 'SIGIRIYA MUSEUM','SIGIRIYA GARDEN'],
+    subNames: ['PATTIPOLA', 'ELLA', 'HAPUTHALE','OHIYA'],
   },
   {
     id: 3,
-    name: 'DAMBULLA',
-    mainImage: '/TopPlace/3.jpeg',
+    name: 'COLOMBO',
+    mainImage:'/TopPlace/colombo/1.png',
     subImages: [
-      '/TopPlace/3.jpeg',
-      '/TopPlace/3.jpeg',
-      '/TopPlace/3.jpeg',
-      '/TopPlace/3.jpeg',
+      '/TopPlace/colombo/1.png',
+      '/TopPlace/colombo/2.png',  
+      '/TopPlace/colombo/3.png',
+      '/TopPlace/colombo/4.png',
+     
     
     ],
-    subNames: ['CAVE TEMPLE', 'GOLDEN BUDDHA', 'RANGIRI STADIUM', 'DAMBULLA MUSEUM'],
+    subNames: ['KELANIYA', 'AVISSAWELLA', 'PANADURA', 'NEGAMBO'],
   },
   {
     id: 4,
-    name: 'MATHALE',
-    mainImage: '/TopPlace/4.jpeg',
+    name: 'HAMBANTOTA',
+    mainImage: '/TopPlace/hambantota/1.png',
     subImages: [
-        '/TopPlace/4.jpeg',
-        '/TopPlace/4.jpeg',
-        '/TopPlace/4.jpeg',
-        '/TopPlace/4.jpeg',
+        '/TopPlace/hambantota/1.png',
+        '/TopPlace/hambantota/2.png',
+        '/TopPlace/hambantota/3.png',
+        '/TopPlace/hambantota/4.png',
+       
      
     ],
-    subNames: ['ALUVIHARA TEMPLE', 'SPICE GARDEN', 'RIVERSTON', 'MATHALE MUSEUM'],
+    subNames: ['HIKKADUWA', 'GALLE', 'MATHARA', 'AMBALAN GODA'],
   },
 ]
 

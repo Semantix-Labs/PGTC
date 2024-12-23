@@ -13,7 +13,7 @@ const locations = [
     name: 'Royal Colombo Golf Club',
     subtitle: 'Blend of heritage and modernity',
     description: 'The second-oldest Royal Golf Club outside the UK, this city-center haven combines rich history, vibrant nature, wildlife, and a unique course bisected by an active rail line.',
-    urlLocation: '/locations/nuwaraeliya'
+    urlLocation: '/locations/colombo-gc'
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const locations = [
     name: 'Nuwara Eliya Golf Club',
     subtitle: 'A golfing paradise in the hills',
     description: 'Nestled in the heart of Sri Lanka`s tea country, this historic club offers a unique golfing experience with breathtaking views of the surrounding mountains and lush tea plantations.',
-     urlLocation: '/locations/nuwaraeliya'
+     urlLocation: '/locations/nuwaraeliya-gc'
   },
   {
     id: 3,
@@ -31,16 +31,16 @@ const locations = [
     name: 'Shangri-La Golf Resort',
     subtitle: 'Modern luxury meets natural beauty',
     description: 'This world-class golf resort on the southern coast of Sri Lanka offers a challenging course with stunning ocean views, surrounded by natural lakes and indigenous flora and fauna.',
-    urlLocation: '/locations/nuwaraeliya'
+    urlLocation: '/locations/shangrila-gr'
   },
   {
     id: 4,
     image: '/golf1.jpeg',
-    city: 'Hambantota',
-    name: 'Shangri-La Golf Resort',
-    subtitle: 'Modern luxury meets natural beauty',
-    description: 'This world-class golf resort on the southern coast of Sri Lanka offers a challenging course with stunning ocean views, surrounded by natural lakes and indigenous flora and fauna.',
-    urlLocation: '/locations/nuwaraeliya'
+    city: 'Kandy',
+    name: 'Victoria Golf & Country Resort',
+    subtitle: 'Golfing excellence in nature',
+    description: 'A championship course by Donald Steel, offering stunning views from every hole. Unique challenges reward skillful shots while penalizing poor ones, set in natural beauty.',
+    urlLocation: '/locations/victoria-gc'
   }
 ]
 
