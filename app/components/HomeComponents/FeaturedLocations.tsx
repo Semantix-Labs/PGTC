@@ -3,39 +3,41 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 interface Location {
   id: number
   name: string
   image: string
+  locations:string
 }
 
 const locations: Location[] = [
   {
     id: 1,
     name: "Colombo",
-    image: "/man.png",
+    image: "/golf/1.png",
+    locations:"/locations/colombo-gc"
   },
   {
     id: 2,
-    name: "Colombo",
-    image: "/home.png",
+    name: "Kandy",
+    image: "/golf/2.jpeg",
+    locations:"/locations/victoria-gc"
   },
   {
     id: 3,
-    name: "Colombo",
-    image: "/home.png",
+    name: "Nuwara Eliya",
+    image: "/golf/3.jpeg",
+    locations:"/locations/nuwaraeliya-gc"
   },
   {
     id: 4,
-    name: "Colombo",
-    image: "/home.png",
+    name: "Hambantota",
+    image: "/golf/4.jpeg",
+    locations:"/locations/shangrila-gr"
   },
-  {
-    id: 5,
-    name: "Colombo",
-    image: "/home.png",
-  },
+  
 ]
 
 export default function FeaturedLocations() {
@@ -97,12 +99,15 @@ export default function FeaturedLocations() {
                     className="object-cover"
                   />
                 </div>
+                <Link href={location.locations} >
                 <div className="p-6 flex justify-between items-center">
                   <h3 className="text-[#2d523f] text-xl font-semibold">
                     {location.name}
                   </h3>
                   <ArrowRight className="w-6 h-6 text-[#2d523f]" />
                 </div>
+                </Link>
+                
               </div>
             ))}
           </div>
