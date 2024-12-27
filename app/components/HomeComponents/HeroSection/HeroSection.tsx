@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "../../ui/button"
+import Link from "next/link";
 
 interface HeroSectionProps {
   headerText: string;
@@ -35,22 +36,27 @@ export default function HeroSection({ headerText, normalText, imageLocation,maxW
         </p>
         
         <div className={`flex flex-col sm:flex-row gap-4 ${buttonsHidden}`}>
-          <Button
-            size="lg"
-            className="bg-white text-customGreen rounded-[12px] hover:bg-white/90 text-lg px-8"
-          >
-            Explore Tours
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-white border-[3px] text-white rounded-[12px] hover:bg-white/20 text-lg px-8"
-          >
-            Contact Us
-          </Button>
+          <Link href="/packages" >
+            <Button
+              size="lg"
+              className="bg-white text-customGreen rounded-[12px] hover:bg-white/90 text-lg px-8"
+            >
+              Explore Tours
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white border-[3px] text-white rounded-[12px] hover:bg-white/20 text-lg px-8"
+            >
+              Contact Us
+            </Button>
+          </Link>
+        </div>
         </div>
       </div>
-    </div>
+
   )
 }
 

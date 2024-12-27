@@ -15,7 +15,7 @@ export default function page() {
       { label: 'Established', value: '2016', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'Seashore Paspalum ', valueColor: 'text-customGold' },
       { label: 'Other', value: "Caddy’s are available, Pro shop, Not busy on weekdays", valueColor: 'text-customGold' },
-      { label: 'Pair', value: '70', valueColor: 'text-customGold' },
+      { label: 'Par', value: '70', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.9 / 127 Blue Tees', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },
       { label: 'Description', value: 'Sea side resort course, From a disused sapphire mine', valueColor: 'text-customGold' },

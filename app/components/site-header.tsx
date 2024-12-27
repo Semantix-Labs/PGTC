@@ -33,13 +33,13 @@ export function SiteHeader() {
         <div className="container px-5 xl:px-auto mx-auto my-auto items-center h-[98px]">
           <div className="ml-auto flex items-center justify-end space-x-4 pt-3">
           <div className="hidden items-center font-medium space-x-4 md:flex">
-            <Link href="tel:+94 556 7894" className="flex items-center space-x-2 text-white">
+            <Link href="tel:+94 773 938 932" className="flex items-center space-x-2 text-white">
             <div className='w-[22px] h-[22px] rounded-full bg-customGreen relative '> <Phone fill='#F8EBC6' className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" /></div> 
-              <span>+94 556 7894</span>
+              <span>+94 773 938 932</span>
             </Link>
-            <Link href="mailto:Lorem ipsum@gmail.com" className="flex items-center space-x-2 text-white">
+            <Link href="mailto:info@paradisegolftours.com" className="flex items-center space-x-2 text-white">
             <div className='w-[22px] h-[22px] rounded-full bg-customGreen relative '> <Mail className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" /></div> 
-              <span>Lorem ipsum@gmail.com</span>
+              <span>info@paradisegolftours.com</span>
             </Link>
           </div>
           <button className="bg-customGreen hidden md:inline-block rounded-[12px] py-[6px] px-[24px] text-white hover:bg-[#2B5741]/90">Explore Tours</button>

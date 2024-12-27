@@ -15,7 +15,7 @@ export default function page() {
       { label: 'Established', value: '1889', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'A mix of buffalo & Atawara', valueColor: 'text-customGold' },
       { label: 'Other', value: "Caddy's are available, Pro shop, Not busy on weekdays", valueColor: 'text-customGold' },
-      { label: 'Pair', value: '71', valueColor: 'text-customGold' },
+      { label: 'Par', value: '71', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.7 / 129 White Tee (men)', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'Gras Blues', valueColor: 'text-customGold' },
       { label: 'Description', value: 'Hillside, Parkland course, with lots of hills and valleys with mature trees', valueColor: 'text-customGold' },

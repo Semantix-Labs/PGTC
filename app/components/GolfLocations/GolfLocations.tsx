@@ -17,7 +17,7 @@ const locations = [
   },
   {
     id: 2,
-    image: '/golf1.jpeg',
+    image: '/nuwara.jpeg',
     city: 'Nuwara Eliya',
     name: 'Nuwara Eliya Golf Club',
     subtitle: 'A golfing paradise in the hills',
@@ -35,7 +35,7 @@ const locations = [
   },
   {
     id: 4,
-    image: '/golf1.jpeg',
+    image: '/image.png',
     city: 'Kandy',
     name: 'Victoria Golf & Country Resort',
     subtitle: 'Golfing excellence in nature',
