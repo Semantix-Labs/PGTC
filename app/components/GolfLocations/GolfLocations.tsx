@@ -26,7 +26,7 @@ const locations = [
   },
   {
     id: 3,
-    image: '/golf1.jpeg',
+    image: '/ham.png',
     city: 'Hambantota',
     name: 'Shangri-La Golf Resort',
     subtitle: 'Modern luxury meets natural beauty',
