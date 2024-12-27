@@ -23,19 +23,19 @@ export default function page() {
      <PhotoGallery photos={[
   {
     id: 1,
-    src: '/home/gallery/moreInfo/1.png',
+    src: '/home/gallery/moreInfo/11.png',
     alt: 'Golfer taking a swing',
     className: 'col-span-2 row-span-2'
   },
   {
     id: 2,
-    src: '/home/gallery/moreInfo/2.png',
+    src: '/home/gallery/moreInfo/22.png',
     alt: 'Group of golfers on course',
     className: 'col-span-1 row-span-1'
   },
   {
     id: 3,
-    src: '/home/gallery/moreInfo/3.jpeg',
+    src: '/home/gallery/moreInfo/3.png',
     alt: 'Golf course fairway view',
     className: 'col-span-1 row-span-1'
   },
