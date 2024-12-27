@@ -8,7 +8,7 @@ export default function page() {
   return (
    <div className=" ">
     
-     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Royal Colombo GC" normalText="This golf haven, nestled in the heart of the city, offers a unique experience with its rich history, reflected in the old clubhouse walls. As the second-oldest Royal Golf Club outside the UK, it features a course bisected by an active rail line. Despite its urban surroundings, the course thrives with vibrant nature. Birds flock to the links, and wildlife roams freely, creating a perfect blend of city and nature." imageLocation="/home.png"/>
+     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Royal Colombo GC" normalText="This golf haven, nestled in the heart of the city, offers a unique experience with its rich history, reflected in the old clubhouse walls. As the second-oldest Royal Golf Club outside the UK, it features a course bisected by an active rail line. Despite its urban surroundings, the course thrives with vibrant nature. Birds flock to the links, and wildlife roams freely, creating a perfect blend of city and nature." imageLocation="/colombo_loc.png"/>
      <Overview  details={[
       { label: 'Name', value: 'Royal Colombo Golf Club (RCGC)', valueColor: 'text-customGold' },
       { label: 'Location', value: 'Colombo , Sri Lanka', valueColor: 'text-customGold' },
