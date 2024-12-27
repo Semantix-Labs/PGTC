@@ -20,7 +20,7 @@ export default function HeroSection({ headerText, normalText, imageLocation,maxW
           src={imageLocation}
           alt="Golfer swinging on a beautiful golf course"
           fill
-          className="object-cover brightness-95"
+          className="object-cover brightness-75"
           priority
         />
       </div>

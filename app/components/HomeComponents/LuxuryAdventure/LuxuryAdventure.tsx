@@ -54,7 +54,7 @@ export default function LuxuryAdventure() {
             className="rounded-2xl w-full md:h-[400px] object-cover"
           />
           <Image
-            src="/home/4.png"
+            src="/home/ss.png"
             alt="Luxury resort"
             width={300}
             height={400}
