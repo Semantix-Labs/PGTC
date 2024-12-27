@@ -23,7 +23,7 @@ export default function page() {
      <PhotoGallery photos={[
   {
     id: 1,
-    src: '/home/gallery/moreInfo/11.png',
+    src: '/home/gallery/moreInfo/1.png',
     alt: 'Golfer taking a swing',
     className: 'col-span-2 row-span-2'
   },
