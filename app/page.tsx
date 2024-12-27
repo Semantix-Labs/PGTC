@@ -18,11 +18,7 @@ export default function Page() {
       <FeaturedLocations/>
       <LuxuryAdventure/>
       <WhereToNext/>
-      {/* <FeaturedLocations/> */}
-      {/* <div className="">
-        <SVGComponent />
-       
-      </div> */}
+    
       
     </div>
   );

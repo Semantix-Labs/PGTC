@@ -42,7 +42,7 @@ export function SiteHeader() {
               <span>info@paradisegolftours.com</span>
             </Link>
           </div>
-          <button className="bg-customGreen hidden md:inline-block rounded-[12px] py-[6px] px-[24px] text-white hover:bg-[#2B5741]/90">Explore Tours</button>
+          <Link href="/packages" className="bg-customGreen hidden md:inline-block rounded-[12px] py-[6px] px-[24px] text-white hover:bg-[#2B5741]/90">Explore Tours</Link>
         </div>
       <div className="container mx-auto md:flex  items-center pt-5 justify-between">
         <div className="flex items-center justify-between">
