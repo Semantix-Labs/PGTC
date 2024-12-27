@@ -6,7 +6,7 @@ export default function CommitmentSection() {
       <div className="grid md:grid-cols-2 gap-8  items-center">
         <div className="relative w-full max-w-[500px] max-h-[500px] aspect-square rounded-3xl overflow-hidden">
           <Image
-            src="/home/gallery/1.png"
+            src="/about2.png"
             alt="Golf instructor teaching students on a golf course"
             fill
             className="object-cover"
