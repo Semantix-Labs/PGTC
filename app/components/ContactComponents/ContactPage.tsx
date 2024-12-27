@@ -14,17 +14,17 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      details: "Lorem ipsum",
+      details: "info@paradisegolftours.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "Lorem ipsum",
+      details: "+94 773 938 932",
     },
     {
       icon: MapPin,
       title: "Location",
-      details: "Lorem ipsum",
+      details: "Colombo/Sri Lanka",
     },
   ]
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <div>
             <h1 className="text-4xl font-bold text-[#2F5233] mb-4">Get in Touch</h1>
             <p className="text-lg text-[#D4AF37]">
-              Contact us for scenic golf tour, luxury packages, and unforgattable golf vacation in Sri Lanka.
+              Contact us for scenic golf tour, luxury packages, and unforgettable golf vacation in Sri Lanka.
             </p>
           </div>
 
