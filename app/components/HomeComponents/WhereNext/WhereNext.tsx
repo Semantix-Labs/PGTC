@@ -9,7 +9,7 @@ export default function WhereToNext() {
     },
     {
       id: 2,
-      image: "/home/gallery/2.png",
+      image: "/home/gallery/23.png",
       alt: "Golf course experience",
     },
     {
