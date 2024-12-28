@@ -55,13 +55,7 @@ const mediaItems: MediaItem[] = [
     thumbnail: '/home/gallery/4.jpeg',
     alt: 'Pool activities'
   },
-  {
-    id: 7,
-    type: 'image',
-    src: '/home/gallery/5.png',
-    thumbnail:  '/home/gallery/5.png',
-    alt: 'Waterfall scene'
-  }
+ 
 ]
 
 export default function Inspirations() {
@@ -86,7 +80,7 @@ export default function Inspirations() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
       <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
-      Inspirations
+      Activity
       </h1>
 
       {/* Modal */}
@@ -155,7 +149,7 @@ export default function Inspirations() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
         {mediaItems.map((item, index) => (
           <button
             key={item.id}
