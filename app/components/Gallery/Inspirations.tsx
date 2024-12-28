@@ -16,43 +16,43 @@ const mediaItems: MediaItem[] = [
   {
     id: 1,
     type: 'image',
-    src: '/home/gallery/1.png',
-    thumbnail: '/home/gallery/1.png',
+    src: '/home/gallery3/1.png',
+    thumbnail: '/home/gallery3/1.png',
     alt: 'Beach relaxation scene'
   },
   {
     id: 2,
     type: 'image',
-    src: '/home/gallery/2.png',
-    thumbnail: '/home/gallery/2.png',
+    src: '/home/gallery3/7.png',
+    thumbnail: '/home/gallery3/7.png',
     alt: 'Spa treatment'
   },
   {
     id: 3,
     type: 'video',
     src: 'https://example.com/cycling-video.mp4',
-    thumbnail: '/home/gallery/6.png',
+    thumbnail: '/home/gallery3/6.jpeg',
     alt: 'Cycling activity'
   },
   {
     id: 4,
     type: 'image',
-    src: '/home/gallery/3.png',
-    thumbnail:'/home/gallery/3.png',
+    src: '/home/gallery3/3.jpeg',
+    thumbnail:'/home/gallery3/3.jpeg',
     alt: 'Beach scene'
   },
   {
     id: 5,
     type: 'video',
     src: 'https://example.com/golf-video.mp4',
-    thumbnail:'/home/gallery/7.png',
+    thumbnail:'/home/gallery3/5.png',
     alt: 'Golf activity'
   },
   {
     id: 6,
     type: 'image',
-    src: '/home/gallery/4.jpeg',
-    thumbnail: '/home/gallery/4.jpeg',
+    src: '/home/gallery/4.png',
+    thumbnail: '/home/gallery3/4.png',
     alt: 'Pool activities'
   },
  
