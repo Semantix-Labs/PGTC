@@ -89,7 +89,7 @@ export default function ContactForm() {
                 return;
             }
 
-            // Append date to formData
+            
             formData.append('arrivalDate', date.toISOString());
             formData.append('country', selectedCountry);
 
@@ -97,7 +97,7 @@ export default function ContactForm() {
 
             if (result.success) {
                 alert.success("Message Sent Successfully");
-                // Reset form after successful submission
+               
                 setSelectedCountry("");
                 setDate(undefined);
             } else {
