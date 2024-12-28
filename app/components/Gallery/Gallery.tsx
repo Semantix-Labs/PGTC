@@ -16,52 +16,46 @@ const mediaItems: MediaItem[] = [
   {
     id: 1,
     type: 'image',
-    src: '/home/gallery/1.png',
-    thumbnail: '/home/gallery/1.png',
+    src: '/home/gallery2/1.png',
+    thumbnail: '/home/gallery2/1.png',
     alt: 'Beach relaxation scene'
   },
   {
     id: 2,
     type: 'image',
-    src: '/home/gallery/2.png',
-    thumbnail: '/home/gallery/2.png',
-    alt: 'Spa treatment'
+    src: '/home/gallery2/22.jpeg',
+    thumbnail: '/home/gallery2/22.jpeg',
+    alt: ''
   },
   {
     id: 3,
     type: 'video',
     src: 'https://example.com/cycling-video.mp4',
-    thumbnail: '/home/gallery/6.png',
+    thumbnail: '/home/gallery2/6.png',
     alt: 'Cycling activity'
   },
   {
     id: 4,
     type: 'image',
-    src: '/home/gallery/3.png',
-    thumbnail:'/home/gallery/3.png',
+    src: '/home/gallery2/2.png',
+    thumbnail:'/home/gallery2/3.png',
     alt: 'Beach scene'
   },
   {
     id: 5,
     type: 'video',
     src: 'https://example.com/golf-video.mp4',
-    thumbnail:'/home/gallery/7.png',
+    thumbnail:'/home/gallery2/5.png',
     alt: 'Golf activity'
   },
   {
     id: 6,
     type: 'image',
-    src: '/home/gallery/4.jpeg',
-    thumbnail: '/home/gallery/4.jpeg',
+    src: '/home/gallery2/4.jpeg',
+    thumbnail: '/home/gallery2/4.png',
     alt: 'Pool activities'
   },
-  {
-    id: 7,
-    type: 'image',
-    src: '/home/gallery/5.png',
-    thumbnail:  '/home/gallery/5.png',
-    alt: 'Waterfall scene'
-  }
+ 
 ]
 
 export default function Gallery() {
@@ -117,7 +111,7 @@ export default function Gallery() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6  gap-4">
         {mediaItems.map((item, index) => (
           <button
             key={item.id}

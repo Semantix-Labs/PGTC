@@ -16,52 +16,46 @@ const mediaItems: MediaItem[] = [
   {
     id: 1,
     type: 'image',
-    src: '/home/gallery/1.png',
-    thumbnail: '/home/gallery/1.png',
+    src: '/home/gallery3/1.png',
+    thumbnail: '/home/gallery3/1.png',
     alt: 'Beach relaxation scene'
   },
   {
     id: 2,
     type: 'image',
-    src: '/home/gallery/2.png',
-    thumbnail: '/home/gallery/2.png',
+    src: '/home/gallery3/7.png',
+    thumbnail: '/home/gallery3/7.png',
     alt: 'Spa treatment'
   },
   {
     id: 3,
     type: 'video',
     src: 'https://example.com/cycling-video.mp4',
-    thumbnail: '/home/gallery/6.png',
+    thumbnail: '/home/gallery3/6.jpeg',
     alt: 'Cycling activity'
   },
   {
     id: 4,
     type: 'image',
-    src: '/home/gallery/3.png',
-    thumbnail:'/home/gallery/3.png',
+    src: '/home/gallery3/3.jpeg',
+    thumbnail:'/home/gallery3/3.jpeg',
     alt: 'Beach scene'
   },
   {
     id: 5,
     type: 'video',
     src: 'https://example.com/golf-video.mp4',
-    thumbnail:'/home/gallery/7.png',
+    thumbnail:'/home/gallery3/5.png',
     alt: 'Golf activity'
   },
   {
     id: 6,
     type: 'image',
-    src: '/home/gallery/4.jpeg',
-    thumbnail: '/home/gallery/4.jpeg',
+    src: '/home/gallery/4.png',
+    thumbnail: '/home/gallery3/4.png',
     alt: 'Pool activities'
   },
-  {
-    id: 7,
-    type: 'image',
-    src: '/home/gallery/5.png',
-    thumbnail:  '/home/gallery/5.png',
-    alt: 'Waterfall scene'
-  }
+ 
 ]
 
 export default function Inspirations() {
@@ -86,7 +80,7 @@ export default function Inspirations() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
       <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
-      Inspirations
+      Activity
       </h1>
 
       {/* Modal */}
@@ -155,7 +149,7 @@ export default function Inspirations() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
         {mediaItems.map((item, index) => (
           <button
             key={item.id}

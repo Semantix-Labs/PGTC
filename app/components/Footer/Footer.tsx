@@ -18,8 +18,74 @@ export default function Footer() {
     <footer className="bg-customLightGreen">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 text-[20px] md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Logo and Description Section */}
+       
+
+          {/* About PGTC Section */}
           <div className="space-y-4">
+            <h3 className="text-customGreen font-semibold text-xl">About PGTC</h3>
+            <ul className="md:space-y-2 text-[#393939] grid grid-cols-2 lg:grid-cols-1">
+              {[
+                { name: "About Us", href: "/about" },
+                { name: "Contact Us", href: "/contact" },
+                { name: "Home", href: "/" },
+                { name: "Privacy Policy", href: "#" },
+              ].map((item, index) => (
+                <li key={index}>
+                  <Link href={item.href} className="hover:text-customGreen transition-colors">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Booking Policy Section */}
+          <div className="space-y-4">
+            <h3 className="text-customGreen font-semibold text-xl">Golf Locations</h3>
+            <ul className="md:space-y-2 text-[#393939] grid grid-cols-2 lg:grid-cols-1">
+              {[
+                { name: "Colombo", href: "/locations/colombo-gc" },
+                { name: "Kandy", href: "/locations/victoria-gc" },
+                { name: "Nuwara Eliya", href: "/locations/nuwaraeliya-gc" },
+                { name: "Hambantota", href: "/locations/shangrila-gr" },
+              ].map((item, index) => (
+                <li key={index}>
+                  <Link href={item.href} className="hover:text-customGreen transition-colors">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Us Section */}
+          <div className="space-y-4">
+            <h3 className="text-customGreen font-semibold text-xl">Contact Us</h3>
+            <ul className="space-y-2 text-customGray">
+              {[
+                { icon: <Phone fill='#F8EBC6' className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" />, text: "+94 773 938 932" },
+                { icon: <Mail  className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" />, text: "info@paradisegolftours.com" },
+                { icon: <MapPin  className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" />, text: "Colombo/Sri Lanka" },
+              ].map((item, index) => (
+                <li key={index} className="flex items-center space-x-2">
+                <div className='w-[22px] h-[22px] rounded-full bg-customGreen relative '>{item.icon}</div>  
+                  <span className="text-[#393939]">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="flex space-x-2 pt-4">
+              <SocialLink href="#" icon={<Facebook className="w-4 h-4" />} />
+              <SocialLink href="#" icon={<Instagram className="w-4 h-4" />} />
+              <SocialLink href="#" icon={
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              } />
+            </div>
+          </div>
+
+             {/* Logo and Description Section */}
+             <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-white rounded-full" />
               <span className="text-customGreen font-bold text-xl">LOGO</span>
@@ -47,65 +113,12 @@ export default function Footer() {
               </form>
             </div>
           </div>
-
-          {/* About PGTC Section */}
-          <div className="space-y-4">
-            <h3 className="text-customGreen font-semibold text-xl">About PGTC</h3>
-            <ul className="md:space-y-2 text-[#393939] grid grid-cols-2 lg:grid-cols-1">
-              {["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"].map((item, index) => (
-                <li key={index}>
-                  <Link href="#" className="hover:text-customGreen transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Booking Policy Section */}
-          <div className="space-y-4">
-            <h3 className="text-customGreen font-semibold text-xl">Booking Policy</h3>
-            <ul className="md:space-y-2 text-[#393939] grid grid-cols-2 lg:grid-cols-1">
-              {["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"].map((item, index) => (
-                <li key={index}>
-                  <Link href="#" className="hover:text-customGreen transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Us Section */}
-          <div className="space-y-4">
-            <h3 className="text-customGreen font-semibold text-xl">Contact Us</h3>
-            <ul className="space-y-2 text-customGray">
-              {[
-                { icon: <Phone fill='#F8EBC6' className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" />, text: "+94 556 7894" },
-                { icon: <Mail  className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" />, text: "Lorem ipsum@gmail.com" },
-                { icon: <MapPin  className="h-[12px] w-[12px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-customBeige" />, text: "Lorem ipsum dolor" },
-              ].map((item, index) => (
-                <li key={index} className="flex items-center space-x-2">
-                <div className='w-[22px] h-[22px] rounded-full bg-customGreen relative '>{item.icon}</div>  
-                  <span className="text-[#393939]">{item.text}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex space-x-2 pt-4">
-              <SocialLink href="#" icon={<Facebook className="w-4 h-4" />} />
-              <SocialLink href="#" icon={<Instagram className="w-4 h-4" />} />
-              <SocialLink href="#" icon={
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                </svg>
-              } />
-            </div>
-          </div>
         </div>
       </div>
       <div className="bg-customGreen text-white py-4">
-        <div className="container mx-auto px-4 text-center">
-          <p>Copyrights PGTC .2024 All right reserved.</p>
+        <div className="container mx-auto flex justify-between px-4 text-center">
+          <p>Copyrights@semantixlabs</p>
+          <p>2025 All right reserved </p>
         </div>
       </div>
     </footer>
