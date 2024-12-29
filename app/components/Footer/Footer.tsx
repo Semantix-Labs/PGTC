@@ -28,7 +28,7 @@ export default function Footer() {
                 { name: "About Us", href: "/about" },
                 { name: "Contact Us", href: "/contact" },
                 { name: "Home", href: "/" },
-                { name: "Privacy Policy", href: "#" },
+                { name: "Privacy Policy", href: "/privacy" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link href={item.href} className="hover:text-customGreen transition-colors">
