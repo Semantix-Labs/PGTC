@@ -41,6 +41,9 @@ const lato = localFont({
 export const metadata: Metadata = {
   title: "PGTC",
   description: "Paradise Golf Tours Ceylon",
+  icons: {
+    icon: '/logo.png', // Use the logo as a favicon
+  },
 };
 
 export default function RootLayout({
