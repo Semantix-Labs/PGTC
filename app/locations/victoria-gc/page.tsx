@@ -14,7 +14,7 @@ export default function page() {
       { label: 'Location', value: 'Rajawella, Kandy', valueColor: 'text-customGold' },
       { label: 'Established', value: '1999', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'Native cow grass & Bermuda', valueColor: 'text-customGold' },
-      { label: 'Other', value: "Caddy’s & Buggies are available, Pro shop", valueColor: 'text-customGold' },
+      { label: 'Other', value: "Caddy’s are available, Pro shop", valueColor: 'text-customGold' },
       { label: 'Par', value: '73', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '72.1/131', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },

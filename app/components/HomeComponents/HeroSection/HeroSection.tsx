@@ -4,6 +4,7 @@ import Link from "next/link";
 
 interface HeroSectionProps {
   headerText: string;
+  headerText2?: string;
   normalText:string;
   imageLocation:string;
   maxWidth:string;
@@ -11,7 +12,7 @@ interface HeroSectionProps {
 }
 
 
-export default function HeroSection({ headerText, normalText, imageLocation,maxWidth,buttonsHidden }: HeroSectionProps) {
+export default function HeroSection({ headerText, normalText, imageLocation,maxWidth,buttonsHidden ,headerText2}: HeroSectionProps) {
   return (
     <div className="relative min-h-[600px] lg:max-h-[990px] ">
       {/* Background Image */}
@@ -33,6 +34,9 @@ export default function HeroSection({ headerText, normalText, imageLocation,maxW
         
         <p className={`text-lg md:text-[24px] text-white mb-8 ${maxWidth}`}>
           {normalText}
+        </p>
+        <p className={`text-lg md:text-[24px] text-white mb-8 ${maxWidth}`}>
+          {headerText2}
         </p>
         
         <div className={`flex flex-col sm:flex-row gap-4 ${buttonsHidden}`}>
