@@ -8,13 +8,13 @@ export default function page() {
   return (
    <div className=" ">
     
-     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Nuwara Eliya GC" normalText="“If ever there was an antique piece then this would be it. Very little has changed over the years including the clubhouse which is remarkably beautiful and intimate (and all that)......The golf is laid out on only 92 acres  / 37 ha so you can imagine how creative the layout is. This is adventure golf at its best and its enthralling. I could play this course everyday and still be entertained and have a blast”. - Paul Jansen Golf Course Architect" imageLocation="/nuwarahome.jpeg"/>
+     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Nuwara Eliya Golf Club" normalText="Nuwara Eliya is a city in the hill country of the Central Province, Sri Lanka. Its name means 'city on the plain (table land)' or 'city of light'. The city is the administrative capital of Nuwara Eliya District, with a picturesque landscape and temperate climate. It is at an altitude of 1,868 m (6,128 ft) and is considered to be the most important location for tea production in Sri Lanka. The city is overlooked by Pidurutalagala, the tallest mountain in Sri Lanka. Nuwara Eliya is known for its temperate, cool climate – the coolest area in Sri Lanka.The Nuwara Eliya golf course was constructed in 1889 by a Scottish soldier of the Gordon Highlanders for the British servicemen and officials who were posted at Nuwara Eliya. The course opened in 1890 with nine holes and was upgraded and expanded to eighteen holes in 1893. In 1892 a golf pavilion, consisting of five rooms was constructed, overlooking the links." imageLocation="/nuwarahome.jpeg"/>
      <Overview  details={[
       { label: 'Name', value: 'Nuwara Eliya Golf Club (NEGC)', valueColor: 'text-customGold' },
       { label: 'Location', value: 'Nuwara Eliya , Sri Lanka', valueColor: 'text-customGold' },
       { label: 'Established', value: '1889', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'A mix of buffalo & Atawara', valueColor: 'text-customGold' },
-      { label: 'Other', value: "Caddy's are available, Pro shop, Not busy on weekdays", valueColor: 'text-customGold' },
+      { label: 'Other', value: "Caddy's are available, Pro shop", valueColor: 'text-customGold' },
       { label: 'Par', value: '71', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.7 / 129 White Tee (men)', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'Gras Blues', valueColor: 'text-customGold' },

@@ -7,13 +7,30 @@ export default function LuxuryAdventure() {
       <div className="grid lg:grid-cols-2 gap-12 mb-16">
         <div>
           <h1 className="text-customGreen text-5xl lg:text-[72px] item-start font-semibold mb-6">
-            Experience The<br />Luxury Adventure
+            Experience <br />Luxury Adventure
           </h1>
           <p className="text-[#C7A041] text-[20px] font-medium leading-[40px] items-center mb-16">
-            Experience luxury adventure with gourmet cuisine, offering diverse flavors and fresh ingredients. Enjoy premium accommodations blending comfort and style, set amidst stunning landscapes. Travel in top-tier vehicles, ensuring safety, elegance, and convenience for a seamless journey. Indulge in a perfect mix of adventure and living at every step.
+          Embark on a journey of luxury and adventure, where exceptional gourmet cuisine meets the finest, freshest ingredients to delight your palate. Relax in premium accommodations that seamlessly combine comfort and sophistication, set against breathtaking landscapes. Travel effortlessly in top-of-the-line vehicles, offering safety, elegance, and convenience at every turn. Immerse yourself in an exquisite blend of adventure and indulgence, creating unforgettable experiences at every step.
           </p>
+          <div className="grid md:grid-cols-1 gap-8 items-end ">
+        <FeatureCard
+          icon='/home/Group.png'
+          title="Golfing"
+          description="Experience world-class golfing amidst breathtaking landscapes, complemented by state-of-the-art facilities and unparalleled service."
+        />
+        <FeatureCard
+          icon='/home/Vector.png'
+          title="Luxury"
+          description="Immerse yourself in unparalleled luxury, where personalized service meets extraordinary experiences and unforgettable adventures."
+        />
+        <FeatureCard
+          icon='/home/2.png'
+          title="Exploration"
+          description="Embark on a journey of discovery, immersing yourself in diverse cultures, breathtaking landscapes, and thrilling adventures."
+        />
+      </div>
           {/* Features Section */}
-      <div className="grid md:grid-cols-1 gap-8 items-end ">
+      {/* <div className="grid md:grid-cols-1 gap-8 items-end ">
         <FeatureCard
           icon='/home/Group.png'
           title="Golfing"
@@ -29,7 +46,7 @@ export default function LuxuryAdventure() {
           title="Exploration"
           description="Discover new cultures, landscapes, and adventures on tour."
         />
-      </div>
+      </div> */}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image

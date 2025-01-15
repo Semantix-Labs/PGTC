@@ -8,13 +8,13 @@ export default function page() {
   return (
    <div className=" ">
     
-     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Shangri La GR" normalText="Sea, sand, sun, and golf come together at this unique Rodney Wright designed resort. Built on a former sapphire mine, the course features championship tees stretching 6,107 yards. Edible roughs with 15,000 pineapples and coconut trees add charm, while the lush environment serves as a haven for birds and wildlife. This setting combines natural beauty with a creative layout, offering an unforgettable golfing experience." imageLocation="/home/hambhome.jpeg"/>
+     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Shangri-La Golf & Country Resort" normalText="Sea, sand, sun, and golf come together at this unique Rodney Wright designed resort. Built on a former sapphire mine, the course features championship tees stretching 6,107 yards. Edible roughs with 15,000 pineapples and coconut trees add charm, while the lush environment serves as a haven for birds and wildlife. This setting combines natural beauty with a creative layout, offering an unforgettable golfing experience." imageLocation="/home/hambhome.jpeg"/>
      <Overview  details={[
-      { label: 'Name', value: 'Shangri La’s Hambantota Golf & Spa', valueColor: 'text-customGold' },
+      { label: 'Name', value: 'Shangri-La Golf & Country Club', valueColor: 'text-customGold' },
       { label: 'Location', value: 'Hamabntota , Sri Lanka', valueColor: 'text-customGold' },
       { label: 'Established', value: '2016', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'Seashore Paspalum ', valueColor: 'text-customGold' },
-      { label: 'Other', value: "Caddy’s are available, Pro shop, Not busy on weekdays", valueColor: 'text-customGold' },
+      { label: 'Other', value: "Caddy’s & Buggies are available, Pro shop", valueColor: 'text-customGold' },
       { label: 'Par', value: '70', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.9 / 127 Blue Tees', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },
