@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Facebook,  Instagram, Send, Phone, Mail, MapPin } from 'lucide-react'
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   const [email, setEmail] = useState("")
@@ -87,11 +88,12 @@ export default function Footer() {
              {/* Logo and Description Section */}
              <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded-full" />
-              <span className="text-customGreen font-bold text-xl">LOGO</span>
+            <div className="lg:h-20 w-12 h-12 lg:-mt-5 lg:w-20 rounded-full bg-white overflow-hidden">
+            <Image src="/logo.png" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
+          </div>
             </div>
             <p className="text-[#393939] text-[20px]">
-              Lorem ipsum dolor sit amet uion ullamco laboris nisi ut aliquip ex ea commodomy.
+            Subscribe for travel tips, exclusive offers, discounts, and destination inspiration straight to your inbox!
             </p>
             <div className="space-y-2">
               <h3 className="text-customGreen font-semibold">Subscribe Us</h3>
