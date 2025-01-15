@@ -7,7 +7,7 @@ export default function Home() {
   return (
    <div className=" ">
     
-     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Journeys Crafted for You" normalText="Discover our exclusive packages blending the thrill of golf with Sri Lanka`s scenic beauty. Each package combines golfing at top locations, exploring iconic destinations like tea estates and wildlife safaris, and indulging in luxury. Start your unforgettable journey today!" imageLocation="/pak.png"/>
+     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Tailored Journeys Just for You" normalText="Explore our exclusive packages that seamlessly blend the excitement of golf with the breathtaking beauty of Sri Lanka. Play at world-class courses while immersing yourself in iconic experiences, from visiting lush tea estates to embarking on thrilling wildlife safaris. Each package is designed to offer unparalleled luxury and unforgettable memories. Begin your extraordinary journey today!" imageLocation="/pak.png"/>
      <SVGComponent />
    </div>
   );

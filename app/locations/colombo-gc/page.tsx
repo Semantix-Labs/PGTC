@@ -14,7 +14,7 @@ export default function page() {
       { label: 'Location', value: 'Colombo , Sri Lanka', valueColor: 'text-customGold' },
       { label: 'Established', value: '1879', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'Native cow grass', valueColor: 'text-customGold' },
-      { label: 'Other', value: "Caddys are available, Pro shop, Not busy on weekdays", valueColor: 'text-customGold' },
+      { label: 'Other', value: "Caddy’s & Buggies are available, Pro shop", valueColor: 'text-customGold' },
       { label: 'Par', value: '71', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '71.3/127', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFEAGLE', valueColor: 'text-customGold' },

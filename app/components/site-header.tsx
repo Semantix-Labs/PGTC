@@ -14,6 +14,7 @@ import {
   SheetTitle,
   SheetDescription 
 } from "./ui/sheet"
+import Image from 'next/image'
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -29,7 +30,7 @@ export function SiteHeader() {
   const pathname = usePathname()
 
   return (
-    <header className="fixed top-0 z-50 lg:h-[138px] w-full  bg-black/40 backdrop-blur-sm">
+    <header className="fixed top-0 z-50 md:h-[138px] w-full  bg-black/40 backdrop-blur-sm">
         <div className="container px-5 xl:px-auto mx-auto my-auto items-center h-[98px]">
           <div className="ml-auto flex items-center justify-end space-x-4 pt-3">
           <div className="hidden items-center font-medium space-x-4 md:flex">
@@ -48,8 +49,10 @@ export function SiteHeader() {
         <div className="flex items-center justify-between">
        
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-full bg-white" />
-          <span className="text-lg font-bold text-white">Logo</span>
+          <div className="lg:h-20 w-12 h-12 lg:-mt-5 lg:w-20 rounded-full bg-white overflow-hidden">
+            <Image src="/logo.png" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
+          </div>
+         
         </Link>
 
         <Sheet  open={isOpen} onOpenChange={setIsOpen}>

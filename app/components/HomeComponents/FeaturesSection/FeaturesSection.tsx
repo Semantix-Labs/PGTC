@@ -10,7 +10,7 @@ const features = [
   {
     icon: '/home/2.png',
     title: "Expert Guides",
-    description: "We offers expert guides ensuring personalized, insightful, and memorable travel experiences for every journey."
+    description: "We offer expert guides ensuring personalized, insightful, and memorable travel experiences for every journey."
   },
   {
     icon: '/home/bag.png',
