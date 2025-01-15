@@ -88,7 +88,7 @@ export default function Footer() {
              {/* Logo and Description Section */}
              <div className="space-y-4">
             <div className="flex items-center space-x-2">
-            <div className="lg:h-20 w-12 h-12 lg:-mt-5 lg:w-20 rounded-full bg-white overflow-hidden">
+            <div className="lg:h-24 w-12 h-12 rounded-lg lg:w-20 bg-white overflow-hidden">
             <Image src="/logo.png" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
           </div>
             </div>
