@@ -5,3 +5,7 @@
 :root {
   --font-lato: 'Lato', sans-serif;
 }
+
+p {
+  text-align: justify !important;
+}

@@ -19,6 +19,8 @@ const features = [
   }
 ]
 
+// r:0 G:125 B:80 
+
 export default function FeaturesSection() {
   return (
     <section className="py-16  md:py-24">
@@ -38,7 +40,7 @@ export default function FeaturesSection() {
                 {feature.title}
               </h3>
               
-              <p className="text-customGreen text-[16px] text-start leading-relaxed">
+              <p className="text-customGreen text-[16px] text-justify leading-relaxed">
                 {feature.description}
               </p>
               </div>
