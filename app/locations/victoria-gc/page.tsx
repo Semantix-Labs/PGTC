@@ -18,7 +18,7 @@ export default function page() {
       { label: 'Par', value: '73', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '72.1/131', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },
-      { label: 'Description', value: 'Resort course with lose community', valueColor: 'text-customGold' },
+      { label: 'Description', value: 'Resort course with closed community', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[
   {
