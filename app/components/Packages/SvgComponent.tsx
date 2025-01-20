@@ -69,8 +69,8 @@ const SVGComponent: React.FC = () => {
                 "Cultural Show",
                 "Cultural Show"
             ],
-            imageLocation: "/nuwara.png",
-            locationUrl: '/packages/nuwaraeliya'
+            imageLocation: "/packages/sv1.jpeg",
+            locationUrl: '/packages/kandy'
         },
         {
             id: 'colombo',
@@ -84,8 +84,8 @@ const SVGComponent: React.FC = () => {
                 "Night Life",
                 "Spa & Wellness"
             ],
-            imageLocation: "/nuwara.png",
-            locationUrl: '/packages/nuwaraeliya'
+            imageLocation: "/packages/colombo/1.png",
+            locationUrl: '/packages/colombo'
         },
         {
             id: 'hambantota',
@@ -99,8 +99,8 @@ const SVGComponent: React.FC = () => {
                 "Wild Safari",
                 "Cultural Visit"
             ],
-            imageLocation: "/nuwara.png",
-            locationUrl: '/packages/nuwaraeliya'
+            imageLocation: "/packages/hambantota/1.png",
+            locationUrl: '/packages/hambantota'
         }
     ];
 
