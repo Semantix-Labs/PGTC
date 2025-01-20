@@ -55,6 +55,49 @@ const mediaItems: MediaItem[] = [
     thumbnail: '/home/gallery3/4.png',
     alt: 'Pool activities'
   },
+  {
+    id: 7,
+    type: 'image',
+    src: '/home/gallery3/8.png',
+    thumbnail: '/home/gallery3/8.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 8,
+    type: 'image',
+    src: '/home/gallery3/9.png',
+    thumbnail: '/home/gallery3/9.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 9,
+    type: 'image',
+    src: '/home/gallery3/10.png',
+    thumbnail: '/home/gallery3/10.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 10,
+    type: 'image',
+    src: '/home/gallery3/11.png',
+    thumbnail: '/home/gallery3/11.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 11,
+    type: 'image',
+    src: '/home/gallery/12.png',
+    thumbnail: '/home/gallery3/12.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 12,
+    type: 'image',
+    src: '/home/gallery3/13.png',
+    thumbnail: '/home/gallery3/13.png',
+    alt: 'Pool activities'
+  },
+ 
  
 ]
 
@@ -149,7 +192,7 @@ export default function Inspirations() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-12  gap-4">
         {mediaItems.map((item, index) => (
           <button
             key={item.id}
