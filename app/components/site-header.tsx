@@ -49,7 +49,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-between">
        
         <Link href="/" className="mr-6 flex items-center ">
-          <div className="md:h-[138px] md:w-auto w-12 h-12 rounded-lg -mt-[68px] bg-white overflow-hidden">
+          <div className="md:h-[138px] md:w-auto w-12 h-12 rounded-lg md:-mt-[68px] bg-white overflow-hidden">
             <Image src="/logoB.jpeg" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
           </div>
          

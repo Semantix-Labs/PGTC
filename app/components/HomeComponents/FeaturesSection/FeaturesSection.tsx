@@ -5,7 +5,7 @@ const features = [
   {
     icon: '/home/travel.png',
     title: "Personalized Tours",
-    description: "We offers personalized tours, crafting unique travel experiences tailored to your interests and preferences."
+    description: "We offer personalized tours, crafting unique travel experiences tailored to your interests and preferences."
   },
   {
     icon: '/home/2.png',
@@ -15,7 +15,7 @@ const features = [
   {
     icon: '/home/bag.png',
     title: "Scenic Locations",
-    description: "PGTC offers breathtaking scenic locations, featuring lush greenery, serene landscapes, and tranquil natural beauty."
+    description: "PGTC offer breathtaking scenic locations, featuring lush greenery, serene landscapes, and tranquil natural beauty."
   }
 ]
 
