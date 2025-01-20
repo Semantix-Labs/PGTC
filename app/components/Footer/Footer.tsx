@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className="bg-customLightGreen">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 text-[20px] md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 text-[20px] lg:grid-cols-2 xl:grid-cols-4 gap-8">
        
 
           {/* About PGTC Section */}
@@ -89,7 +89,7 @@ export default function Footer() {
              <div className="space-y-4">
             <div className="flex items-center space-x-2">
             <div className="lg:h-24 w-12 h-12 rounded-lg lg:w-20 bg-white overflow-hidden">
-            <Image src="/logo.png" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
+            <Image src="/logoB.jpeg" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
           </div>
             </div>
             <p className="text-[#393939] text-[20px]">
