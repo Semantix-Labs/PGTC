@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <div className="">
-      <HeroSection maxWidth="max-w-2xl" headerText="Discover the Perfect Swing in Paradise" normalText="Explore Sri Lanka's breathtaking scenery and top golf courses  with PGTC" imageLocation="/home/homegolf.jpeg"/>
+      <HeroSection maxWidth="max-w-5xl" headerText="Discover the Perfect Swing in Paradise" normalText="Explore Sri Lanka's breathtaking scenery and top golf courses  with PGTC" imageLocation="/home/homegolf.jpeg"/>
       <FeaturesSection/>
       <FeaturedLocations/>
       <LuxuryAdventure/>
@@ -22,5 +22,5 @@ export default function Page() {
       
     </div>
   );
-}
+}  
 

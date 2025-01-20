@@ -55,6 +55,48 @@ const mediaItems: MediaItem[] = [
     thumbnail: '/home/gallery2/4.png',
     alt: 'Pool activities'
   },
+  {
+    id: 7,
+    type: 'image',
+    src: '/home/gallery2/7.png',
+    thumbnail: '/home/gallery2/7.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 8,
+    type: 'image',
+    src: '/home/gallery2/8.png',
+    thumbnail: '/home/gallery2/8.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 9,
+    type: 'image',
+    src: '/home/gallery2/9.png',
+    thumbnail: '/home/gallery2/9.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 10,
+    type: 'image',
+    src: '/home/gallery2/10.png',
+    thumbnail: '/home/gallery2/10.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 11,
+    type: 'image',
+    src: '/home/gallery2/11.png',
+    thumbnail: '/home/gallery2/11.png',
+    alt: 'Pool activities'
+  },
+  {
+    id: 12,
+    type: 'image',
+    src: '/home/gallery2/12.png',
+    thumbnail: '/home/gallery2/12.png',
+    alt: 'Pool activities'
+  },
  
 ]
 
@@ -72,7 +114,7 @@ export default function Gallery() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-20">
       <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
         Gallery
       </h1>
@@ -111,7 +153,7 @@ export default function Gallery() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6  gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-12  gap-4">
         {mediaItems.map((item, index) => (
           <button
             key={item.id}

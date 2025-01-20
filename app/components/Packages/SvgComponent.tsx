@@ -59,7 +59,7 @@ const SVGComponent: React.FC = () => {
         },
         {
             id: 'kandy',
-            title: "Golf In Nuwara Eliya",
+            title: "Golf In Kandy",
             description: "Kandy experiences warm weather year-round (22°C-30°C), mild nights (18°C-22°C), moderate to high humidity (75%-85%), annual rainfall (1,800mm), with dry (Dec-Mar) & wet (Apr-Nov).",
             activities: [
                 "Boating",
@@ -67,10 +67,10 @@ const SVGComponent: React.FC = () => {
                 "Bird Watching",
                 "Shopping",
                 "Cultural Show",
-                "Cultural Show"
+                "Visit Spice Gardens"
             ],
-            imageLocation: "/nuwara.png",
-            locationUrl: '/packages/nuwaraeliya'
+            imageLocation: "/packages/sv1.jpeg",
+            locationUrl: '/packages/kandy'
         },
         {
             id: 'colombo',
@@ -84,8 +84,8 @@ const SVGComponent: React.FC = () => {
                 "Night Life",
                 "Spa & Wellness"
             ],
-            imageLocation: "/nuwara.png",
-            locationUrl: '/packages/nuwaraeliya'
+            imageLocation: "/packages/sv2.jpeg",
+            locationUrl: '/packages/colombo'
         },
         {
             id: 'hambantota',
@@ -99,8 +99,8 @@ const SVGComponent: React.FC = () => {
                 "Wild Safari",
                 "Cultural Visit"
             ],
-            imageLocation: "/nuwara.png",
-            locationUrl: '/packages/nuwaraeliya'
+            imageLocation: "/packages/sv3.jpeg",
+            locationUrl: '/packages/hambantota'
         }
     ];
 

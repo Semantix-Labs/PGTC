@@ -1,3 +1,5 @@
+'use client'
+
 import { toast, ToastOptions, Id } from 'react-toastify';
 
 interface AlertOptions extends ToastOptions {
