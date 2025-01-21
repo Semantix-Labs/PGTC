@@ -51,9 +51,9 @@ export default function page() {
           description: 'ETake a rejuvenating dip in these natural hot springs, known for their therapeutic properties.'
         }
       ]}
-        paragraph1={`Kandy, established as a royal city in the 14th century, flourished as the final capital of Sri Lanka's ancient kings. Its cultural heritage is evident in its architecture, with historic temples, palaces, and traditional houses that reflect its regal past. The city is also home to the revered Temple of the Sacred Tooth Relic, a site of global significance.`}
-        paragraph2={`Renowned for its mild climate, Kandy provides a pleasant retreat from the tropical heat, with temperatures averaging between 18°C and 26°C. The city's lush surroundings, including its central lake and forested hills, create a picturesque and serene environment.`}
-        paragraph3={`Exploring Kandy is a journey into history and culture, from vibrant festivals and traditional dances to peaceful botanical gardens and scenic landscapes. Its rich heritage and natural charm make it an enriching destination for travelers seeking cultural and spiritual connections.`}
+        paragraph1={`Hambantota, nestled in the southern region of Sri Lanka, is a city steeped in history and cultural significance. Its rich heritage is reflected in archaeological landmarks and traditional practices that showcase its vibrant past. The city is renowned for the Ruhunu Kataragama Temple, a revered site of cultural and spiritual importance, attracting pilgrims from across the country.`}
+        paragraph2={`Renowned for its warm coastal climate, Hambantota offers a retreat with temperatures ranging between 26°C and 32°C. The city's landscapes, including pristine beaches, dry-zone forests, and salt pans, create a unique environment.`}
+        paragraph3={`Exploring Hambantota is a journey into history and nature, from bustling local markets and cultural festivals to wildlife safaris in Yala National Park and scenic coastal views. Its rich history and natural beauty make it an inspiring destination for travelers seeking adventure and cultural immersion.`}
       />
       <PlacesToVisit places={[
         {

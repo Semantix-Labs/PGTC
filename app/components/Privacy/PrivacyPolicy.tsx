@@ -120,7 +120,7 @@ export default function PrivacyPolicy() {
 
       <section>
         <h2 className="text-[#2d523f] text-5xl font-bold text-center mb-16">
-          Contact Us
+        Policy Update
         </h2>
         <p className="text-customGold">
           We may update this Privacy Policy periodically to reflect changes in legal or operational requirements. The latest version will
