@@ -29,8 +29,8 @@ const mediaItems: MediaItem[] = [
   },
   {
     id: 3,
-    type: 'video',
-    src: 'https://example.com/cycling-video.mp4',
+    type: 'image',
+    src: '/home/gallery3/6.jpeg',
     thumbnail: '/home/gallery3/6.jpeg',
     alt: 'Cycling activity'
   },
@@ -43,8 +43,8 @@ const mediaItems: MediaItem[] = [
   },
   {
     id: 5,
-    type: 'video',
-    src: 'https://example.com/golf-video.mp4',
+    type: 'image',
+    src:'/home/gallery3/5.png',
     thumbnail:'/home/gallery3/5.png',
     alt: 'Golf activity'
   },
