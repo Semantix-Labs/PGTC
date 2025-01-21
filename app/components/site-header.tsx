@@ -30,7 +30,7 @@ export function SiteHeader() {
   const pathname = usePathname()
 
   return (
-    <header className="fixed top-0 z-50 md:h-[138px]  w-full  bg-black/40 backdrop-blur-sm">
+    <header className="fixed top-0 z-50 md:h-[138px] h-[100px] w-full  bg-black/40 backdrop-blur-sm">
         <div className="container px-5 xl:px-auto mx-auto my-auto items-center h-[98px]">
           <div className="ml-auto flex items-center justify-end space-x-4 pt-3">
           <div className="hidden items-center font-medium space-x-4 md:flex">
@@ -49,7 +49,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-between">
        
         <Link href="/" className="mr-6 flex items-center ">
-          <div className="md:h-[138px] md:w-auto w-12 h-12 rounded-lg md:-mt-[68px] bg-white overflow-hidden">
+          <div className="md:h-[138px] md:w-auto w-auto h-[100px] rounded-lg -mt-[32px] md:-mt-[68px] bg-white overflow-hidden">
             <Image src="/logoB.jpeg" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
           </div>
          
