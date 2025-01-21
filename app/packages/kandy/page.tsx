@@ -11,8 +11,8 @@ export default function page() {
       <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="KANDY" normalText="Kandy, often referred to as the Cultural Capital of Sri Lanka, is a picturesque hill city nestled amidst lush greenery and misty mountains. It is known for its cool climate, historical significance, and serene atmosphere. The city's rich cultural heritage, vibrant gardens, and tranquil landscapes make it a captivating destination for travelers seeking history, and natural beauty." imageLocation="/packages/kandy/head.jpeg" />
       <OverviewSection activities={[
         {
-          title: 'Visit Galle Face Green',
-          description: 'Relax by the ocean at Colombo most famous open space, ideal for a stroll or enjoying street food.'
+          title: 'Visit Gregory Lake',
+          description: 'Enjoy boating, jet skiing, or paddle boating while soaking in the serene beauty of this picturesque lake.'
         },
         {
             title: 'Cycling Around Gregory Lake',
@@ -51,10 +51,10 @@ export default function page() {
           description: 'Explore this urban forest reserve to enjoy lush greenery, birdwatching, and peaceful walking trails.'
         }
       ]}
-        paragraph1={`Colombo, established as a major port by colonial powers, developed into a bustling urban center and the commercial capital of Sri Lanka. Its colonial heritage is reflected in its architecture, with grand old buildings, historic churches, and a sprawling fort area that highlight its history as a hub of trade and governance. The city also became a melting pot of cultures, contributing to its dynamic character.`}
-        paragraph2={`Renowned for its vibrant cosmopolitan vibe, Colombo offers a dynamic contrast to Sri Lanka's more tranquil regions. Temperatures typically range from 26°C to 31°C, with warm, sunny days and occasional tropical rains. The city’s bustling streets, modern skyscrapers, and coastal views create a dynamic setting for both business and leisure.`}
-        paragraph3={`Traveling through Colombo is a cultural delight, from exploring bustling markets and historic landmarks to savoring diverse cuisine and vibrant nightlife. Its energetic ambiance and cultural richness offer an exciting urban experience for all types of travelers.`}
-      />
+      paragraph1={`Kandy, established as a royal city in the 14th century, flourished as the final capital of Sri Lanka's ancient kings. Its cultural heritage is evident in its architecture, with historic temples, palaces, and traditional houses that reflect its regal past. The city is also home to the revered Temple of the Sacred Tooth Relic, a site of global significance.`}
+      paragraph2={`Renowned for its mild climate, Kandy provides a pleasant retreat from the tropical heat, with temperatures averaging between 18°C and 26°C. The city's lush surroundings, including its central lake and forested hills, create a picturesque and serene environment.`}
+      paragraph3={`Exploring Kandy is a journey into history and culture, from vibrant festivals and traditional dances to peaceful botanical gardens and scenic landscapes. Its rich heritage and natural charm make it an enriching destination for travelers seeking cultural and spiritual connections.`}
+  />
       <PlacesToVisit places={[
         {
           name: "Kandy Lake",
