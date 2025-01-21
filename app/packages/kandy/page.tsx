@@ -11,8 +11,8 @@ export default function page() {
       <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="KANDY" normalText="Kandy, often referred to as the Cultural Capital of Sri Lanka, is a picturesque hill city nestled amidst lush greenery and misty mountains. It is known for its cool climate, historical significance, and serene atmosphere. The city's rich cultural heritage, vibrant gardens, and tranquil landscapes make it a captivating destination for travelers seeking history, and natural beauty." imageLocation="/packages/kandy/head.jpeg" />
       <OverviewSection activities={[
         {
-          title: 'Visit Galle Face Green',
-          description: 'Relax by the ocean at Colombo most famous open space, ideal for a stroll or enjoying street food.'
+          title: 'Visit Gregory Lake',
+          description: 'Enjoy boating, jet skiing, or paddle boating while soaking in the serene beauty of this picturesque lake.'
         },
         {
             title: 'Cycling Around Gregory Lake',

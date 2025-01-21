@@ -11,8 +11,8 @@ export default function page() {
       <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="COLOMBO" normalText="Colombo, the bustling capital of Sri Lanka, is a vibrant metropolis combining modern life with historical charm. Known for its tropical climate, lively streets, and dynamic atmosphere, the city offers a unique blend of cultures, architecture, and cuisines. Colombo's landmarks, markets, and coastal vistas make it a captivating destination for travelers seeking energy and heritage." imageLocation="/packages/colombo/head.jpeg" />
       <OverviewSection activities={[
         {
-          title: 'Visit Gregory Lake ',
-          description: 'Enjoy boating, jet skiing, or paddle boating while soaking in the serene beauty of this picturesque lake.'
+          title: 'Visit Galle Face Green',
+          description: 'Relax by the ocean at Colombo’s most famous open space, ideal for a stroll or enjoying street food.'
         },
         {
           title: 'Explore the National Museum ',
