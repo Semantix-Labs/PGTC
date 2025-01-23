@@ -1,48 +1,55 @@
-import { Play } from 'lucide-react';
+'use client'
 import Image from 'next/image'
+import { useState } from 'react'
+import { Play } from 'lucide-react'
 
-interface PhotoGalleryPropes{
-  photos: {
-    id:number,
-    src:string,
-    alt:string,
-    className:string,
-    type?: 'video'
-  }[];
+interface MediaItem {
+  id: number;
+  src: string;
+  alt: string;
+  className: string;
+  type?: 'image' | 'video';
+  poster?: string;
 }
 
+export default function PhotoGallery({ photos }: { photos: MediaItem[] }) {
+  const [activeVideo, setActiveVideo] = useState<number | null>(null);
 
-export default function PhotoGallery(photos:PhotoGalleryPropes) {
   return (
-    <section className="py-12 ">
+    <section className="py-12">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl text-customGreen font-semibold text-center mb-12">
-          Photo Gallery
+          Gallery
         </h2>
         
-        <div className=" mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {photos.photos.map((photo:{id:number,src:string,alt:string,className:string, type?: 'video'}) => (
+        <div className="mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {photos.map((item) => (
               <div 
-                key={photo.id}
-                className={`relative rounded-xl overflow-hidden ${photo.className} ${photo.type === 'video' ? 'md:col-span-2 row-span-2' : ''}`}
+                key={item.id}
+                className={`relative rounded-xl overflow-hidden ${item.className}`}
               >
                 <div className="aspect-square w-full h-full relative">
-                  {photo.type === 'video' ? (
-                    <div className='relative'>
+                  {item.type === 'video' || item.src.endsWith('.mp4') ? (
+                    <div className="relative w-full h-full">
                       <video
-                        src={photo.src}
-                        controls
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                       <div className="absolute inset-0 flex items-center justify-center">
-                          <Play className="w-12 h-12 text-white" />
-                        </div>
+                        className="w-full h-full object-cover"
+                        poster={item.poster}
+                      >
+                        <source src={item.src} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      <div 
+                        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition-all duration-300 cursor-pointer"
+                        onClick={() => setActiveVideo(item.id)}
+                      >
+                        <Play className="text-white w-16 h-16" fill="white" />
+                      </div>
                     </div>
                   ) : (
                     <Image
-                      src={photo.src}
-                      alt={photo.alt}
+                      src={item.src}
+                      alt={item.alt}
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-300"
                     />
@@ -53,6 +60,25 @@ export default function PhotoGallery(photos:PhotoGalleryPropes) {
           </div>
         </div>
       </div>
+
+      {activeVideo !== null && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center"
+          onClick={() => setActiveVideo(null)}
+        >
+          <video 
+            controls 
+            autoPlay 
+            className="max-w-full max-h-full"
+          >
+            <source 
+              src={photos.find(p => p.id === activeVideo)?.src} 
+              type="video/mp4" 
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
     </section>
   )
 }

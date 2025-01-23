@@ -26,7 +26,7 @@ export default function page() {
     src: '/videos/colombo.mp4',
     alt: 'Golfer taking a swing',
     className: 'col-span-2 row-span-2',
-    type:'video'
+   
   },
   {
     id: 2,
@@ -51,7 +51,31 @@ export default function page() {
     src: '/home/gallery/moreInfo/5.png',
     alt: 'Golfer near clubhouse',
     className: 'col-span-1 row-span-1'
-  }
+  },
+  {
+    id: 6,
+    src: '/home/gallery/moreInfo/6.png',
+    alt: 'Golfer near clubhouse',
+    className: 'col-span-1 row-span-1'
+  },
+  {
+    id: 7,
+    src: '/home/gallery/moreInfo/7.png',
+    alt: 'Golfer near clubhouse',
+    className: 'col-span-1 row-span-1'
+  },
+  {
+    id: 8,
+    src: '/home/gallery/moreInfo/8.png',
+    alt: 'Golfer near clubhouse',
+    className: 'col-span-1 row-span-1'
+  },
+  {
+    id: 9,
+    src: '/home/gallery/moreInfo/9.png',
+    alt: 'Golfer near clubhouse',
+    className: 'col-span-1 row-span-1'
+  },
 ]}  />
    
      
