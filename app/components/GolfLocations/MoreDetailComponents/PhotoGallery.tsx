@@ -1,3 +1,4 @@
+import { Play } from 'lucide-react';
 import Image from 'next/image'
 
 interface PhotoGalleryPropes{
@@ -6,40 +7,10 @@ interface PhotoGalleryPropes{
     src:string,
     alt:string,
     className:string,
+    type?: 'video'
   }[];
 }
-// const photos = [
-//   {
-//     id: 1,
-//     src: '/home/gallery/moreInfo/1.png',
-//     alt: 'Golfer taking a swing',
-//     className: 'col-span-2 row-span-2'
-//   },
-//   {
-//     id: 2,
-//     src: '/home/gallery/moreInfo/2.png',
-//     alt: 'Group of golfers on course',
-//     className: 'col-span-1 row-span-1'
-//   },
-//   {
-//     id: 3,
-//     src: '/home/gallery/moreInfo/3.jpeg',
-//     alt: 'Golf course fairway view',
-//     className: 'col-span-1 row-span-1'
-//   },
-//   {
-//     id: 4,
-//     src: '/home/gallery/moreInfo/4.png',
-//     alt: 'Golfers on green course',
-//     className: 'col-span-1 row-span-1'
-//   },
-//   {
-//     id: 5,
-//     src: '/home/gallery/moreInfo/5.png',
-//     alt: 'Golfer near clubhouse',
-//     className: 'col-span-1 row-span-1'
-//   }
-// ]
+
 
 export default function PhotoGallery(photos:PhotoGalleryPropes) {
   return (
@@ -50,19 +21,32 @@ export default function PhotoGallery(photos:PhotoGalleryPropes) {
         </h2>
         
         <div className=" mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {photos.photos.map((photo:{id:number,src:string,alt:string,className:string}) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {photos.photos.map((photo:{id:number,src:string,alt:string,className:string, type?: 'video'}) => (
               <div 
                 key={photo.id}
-                className={`relative rounded-xl overflow-hidden ${photo.className}`}
+                className={`relative rounded-xl overflow-hidden ${photo.className} ${photo.type === 'video' ? 'md:col-span-2 row-span-2' : ''}`}
               >
                 <div className="aspect-square w-full h-full relative">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  {photo.type === 'video' ? (
+                    <div className='relative'>
+                      <video
+                        src={photo.src}
+                        controls
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                       <div className="absolute inset-0 flex items-center justify-center">
+                          <Play className="w-12 h-12 text-white" />
+                        </div>
+                    </div>
+                  ) : (
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                 </div>
               </div>
             ))}
@@ -72,4 +56,3 @@ export default function PhotoGallery(photos:PhotoGalleryPropes) {
     </section>
   )
 }
-

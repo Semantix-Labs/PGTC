@@ -23,9 +23,10 @@ export default function page() {
      <PhotoGallery photos={[
   {
     id: 1,
-    src: '/home/gallery/moreInfo/1.png',
+    src: '/videos/colombo.mp4',
     alt: 'Golfer taking a swing',
-    className: 'col-span-2 row-span-2'
+    className: 'col-span-2 row-span-2',
+    type:'video'
   },
   {
     id: 2,
