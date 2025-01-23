@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight, X, Play } from 'lucide-react'
 
@@ -104,6 +104,7 @@ const mediaItems: MediaItem[] = [
 export default function Inspirations() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const thumbnailRef = useRef<HTMLDivElement>(null)
 
   const currentItem = mediaItems[currentIndex]
 
@@ -120,10 +121,22 @@ export default function Inspirations() {
     setIsModalOpen(true)
   }
 
+  const scrollLeft = () => {
+    if (thumbnailRef.current) {
+      thumbnailRef.current.scrollLeft -= 200
+    }
+  }
+
+  const scrollRight = () => {
+    if (thumbnailRef.current) {
+      thumbnailRef.current.scrollLeft += 200
+    }
+  }
+
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
       <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
-      Activity
+        Activity
       </h1>
 
       {/* Modal */}
@@ -192,30 +205,48 @@ export default function Inspirations() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-12  gap-4">
-        {mediaItems.map((item, index) => (
-          <button
-            key={item.id}
-            onClick={() => openModal(index)}
-            className={`relative aspect-square rounded-lg overflow-hidden ${
-              index === currentIndex ? 'ring-2 ring-customGreen' : ''
-            }`}
-          >
-            <Image
-              src={item.thumbnail}
-              alt={item.alt}
-              fill
-              className="object-cover"
-            />
-            {item.type === 'video' && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <Play className="w-8 h-8 text-white" />
-              </div>
-            )}
-          </button>
-        ))}
+      <div className="relative">
+        <button
+          onClick={scrollLeft}
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-2 z-10"
+          aria-label="Scroll thumbnails left"
+        >
+          <ChevronLeft className="w-6 h-6 text-white bg-customGreen " />
+        </button>
+        <div
+          ref={thumbnailRef}
+          className="flex overflow-x-scroll scroll-smooth gap-4 py-2 scrollbar-hide"
+        >
+          {mediaItems.map((item, index) => (
+            <button
+              key={item.id}
+              onClick={() => openModal(index)}
+              className={`relative w-48 h-48 rounded-lg overflow-hidden flex-shrink-0 ${
+                index === currentIndex ? ' border-2 border-customGreen' : ''
+              }`}
+            >
+              <Image
+                src={item.thumbnail}
+                alt={item.alt}
+                fill
+                className="object-cover"
+              />
+              {item.type === 'video' && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                  <Play className="w-8 h-8 text-white" />
+                </div>
+              )}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={scrollRight}
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-2 z-10"
+          aria-label="Scroll thumbnails right"
+        >
+          <ChevronRight className="w-6 h-6 text-white bg-customGreen" />
+        </button>
       </div>
     </div>
   )
 }
-

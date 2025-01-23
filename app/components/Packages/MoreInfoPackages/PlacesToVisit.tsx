@@ -18,7 +18,7 @@ export default function PlacesToVisit(places:PlacesToVisitPropes) {
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#2F5233]">
-        Place to Visit
+      Places to Visit
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {places.places.map((place:Place) => (
