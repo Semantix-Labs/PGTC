@@ -262,8 +262,8 @@ export default function Gallery() {
                 stopAutoScroll()
                 startAutoScroll()
               }}
-              className={`relative w-48 h-48 rounded-lg overflow-hidden flex-shrink-0 ${
-                index === currentIndex ? 'ring-2 ring-customGreen' : ''
+              className={`relative w-48 h-40 rounded-lg overflow-hidden flex-shrink-0 ${
+                index === currentIndex ? 'border-2 border-customGreen' : ''
               }`}
             >
               <Image

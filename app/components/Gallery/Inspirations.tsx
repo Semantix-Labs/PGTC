@@ -222,7 +222,7 @@ export default function Inspirations() {
               key={item.id}
               onClick={() => openModal(index)}
               className={`relative w-48 h-48 rounded-lg overflow-hidden flex-shrink-0 ${
-                index === currentIndex ? 'ring-2 ring-customGreen' : ''
+                index === currentIndex ? ' border-2 border-customGreen' : ''
               }`}
             >
               <Image
