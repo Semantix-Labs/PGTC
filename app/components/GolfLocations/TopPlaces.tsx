@@ -16,11 +16,11 @@ const places = [
       '/TopPlace/kandy/4.jpeg',
     
     ],
-    subNames: ['SRI DALADA MALIGAWA', 'PERADENIYA GARDEN', 'KANDY LAKE', 'KANDY MUSEUM'],
+    subNames: ['SRI DALADA MALIGAWA', 'SIGIRIYA', 'DABULLA', 'MATHALE'],
   },
   {
     id: 2,
-    name: 'NUWARAELIYA',
+    name: 'NUWARA ELIYA',
     mainImage: '/TopPlace/sigiriya.jpeg',
     subImages: [
       
@@ -31,7 +31,7 @@ const places = [
      
     
     ],
-    subNames: ['PATTIPOLA', 'ELLA', 'HAPUTHALE','OHIYA'],
+    subNames: ['PATTIPOLA', 'ELLA', 'HAPUTALE','OHIYA'],
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const places = [
      
     
     ],
-    subNames: ['KELANIYA', 'AVISSAWELLA', 'PANADURA', 'NEGAMBO'],
+    subNames: ['KELANIYA', 'AVISSAWELLA', 'PANADURA', 'NEGOMBO'],
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const places = [
        
      
     ],
-    subNames: ['HIKKADUWA', 'GALLE', 'MATHARA', 'AMBALAN GODA'],
+    subNames: ['HIKKADUWA', 'GALLE', 'MATARA', 'AMBALANGODA'],
   },
 ]
 
