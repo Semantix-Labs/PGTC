@@ -113,7 +113,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <div className="lg:h-24 w-12 h-12 rounded-lg lg:w-20 bg-white overflow-hidden">
                 <Image
-                  src="/logoB.jpeg"
+                  src="/logo12.png"
                   width={300}
                   height={300}
                   alt="Paradise Golf Tours Logo"
