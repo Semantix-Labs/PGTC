@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Play } from 'lucide-react'
+import { Play, X } from 'lucide-react'
 
 interface MediaItem {
   id: number;
@@ -66,17 +66,31 @@ export default function PhotoGallery({ photos }: { photos: MediaItem[] }) {
           className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center"
           onClick={() => setActiveVideo(null)}
         >
-          <video 
-            controls 
-            autoPlay 
-            className="max-w-full max-h-full"
+          {/* Prevent click propagation on the video to stop closing the modal */}
+          <div 
+            className="relative max-w-full max-h-full"
+            onClick={(e) => e.stopPropagation()}
           >
-            <source 
-              src={photos.find(p => p.id === activeVideo)?.src} 
-              type="video/mp4" 
-            />
-            Your browser does not support the video tag.
-          </video>
+            {/* Close button */}
+            <button 
+              className="absolute top-2 right-2 z-60 bg-white/30 hover:bg-white/50 rounded-full p-2"
+              onClick={() => setActiveVideo(null)}
+            >
+              <X className="text-white w-6 h-6" />
+            </button>
+
+            <video 
+              controls 
+              autoPlay 
+              className="max-w-full max-h-full"
+            >
+              <source 
+                src={photos.find(p => p.id === activeVideo)?.src} 
+                type="video/mp4" 
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       )}
     </section>

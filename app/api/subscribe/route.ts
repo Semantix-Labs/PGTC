@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
     // Email to subscriber
     const subscriberMailOptions = {
-      from: process.env.SMTP_USER,
+      from: process.env.companyEmail,
       to: email,
       subject: 'Welcome to Paradise Golf Tours Newsletter!',
       html: `
