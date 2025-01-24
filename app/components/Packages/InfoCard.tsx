@@ -35,7 +35,7 @@ export default function InfoCard({
           exit={{ opacity: 0, scale: 0.8 }}
           transition={{ duration: 0.3 }}
         >
-          <Card className={`overflow-hidden  ${id==='colombo' && ' lg:-ml-96 xl:-ml-[184px] mt-72'} ${id==='hambantota' && 'lg:mt-28 lg:ml-96 xl:ml-[484px] mt-72'}   ${id==='Nuwaraeliya' && 'lg:mt-24 lg:ml-96 xl:ml-[484px] -mt-96'} ${id==='kandy' && 'lg:-mt-24 lg:ml-96 xl:ml-[484px] -mt-96'} mx-auto w-56 lg:w-80 h-full rounded-lg pb-2 bg-white shadow-lg`}>
+          <Card className={`overflow-hidden  ${id==='colombo' && ' lg:-ml-64 xl:-ml-[184px] mt-8'} ${id==='hambantota' && 'lg:mt-28 lg:ml-96 xl:ml-[484px] mt-6'}   ${id==='Nuwaraeliya' && 'lg:mt-24 lg:ml-96 xl:ml-[484px] mt-0'} ${id==='kandy' && 'lg:mt-20 lg:ml-96 xl:ml-[484px] -mt-0'} mx-auto w-56 lg:w-80 h-full rounded-lg pb-2 bg-white shadow-lg`}>
             <div className="relative  h-32 w-56 lg:h-48 lg:w-full">
               <Image
                 src={imageLocation}

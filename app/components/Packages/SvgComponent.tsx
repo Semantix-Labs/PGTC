@@ -106,7 +106,7 @@ const SVGComponent: React.FC = () => {
 
 
     return (
-        <div className={`relative max-w-7xl mx-auto md:py-20 ${selectedRegion==='hambantota' && 'lg:!pb-96'} `}>
+        <div className={`relative max-w-7xl mx-auto md:py-20 `}>
             <h2 className='text-3xl md:text-[42px] text-customGreen font-bold my-8 text-center'>Tours</h2>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -487,7 +487,7 @@ const SVGComponent: React.FC = () => {
 
             </svg>
 
-            <div className="absolute top-1/2 right-1/2 w-1/4 p-4">
+            <div className="absolute top-0 right-1/2 w-1/4 p-4">
                 {locationData.map((location) => (
                     <InfoCard
                         key={location.id}
