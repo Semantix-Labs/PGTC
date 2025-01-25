@@ -1,4 +1,3 @@
-// app/api/subscribe/route.ts
 import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
@@ -8,16 +7,18 @@ export async function POST(req: Request) {
     const companyEmail = process.env.SMTP_TO // Your company's email
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-      })
+      host: process.env.SMTP_HOST, // Hostinger SMTP host
+      port: Number(process.env.SMTP_PORT), // Hostinger SMTP port
+      secure: true, // Use SSL
+      auth: {
+        user: process.env.SMTP_USER, // Hostinger email
+        pass: process.env.SMTP_PASSWORD, // Hostinger email password
+      },
+    })
 
     // Email to subscriber
     const subscriberMailOptions = {
-      from: process.env.companyEmail,
+      from: companyEmail,
       to: email,
       subject: 'Welcome to Paradise Golf Tours Newsletter!',
       html: `
@@ -36,12 +37,12 @@ export async function POST(req: Request) {
             <p style="color: #666; font-size: 12px;">Sri Lanka</p>
           </div>
         </div>
-      `
+      `,
     }
 
     // Email to company
     const companyMailOptions = {
-      from: process.env.SMTP_USER,
+      from: companyEmail,
       to: companyEmail,
       subject: 'New Newsletter Subscription',
       html: `
@@ -53,17 +54,17 @@ export async function POST(req: Request) {
             <p><strong>Date Subscribed:</strong> ${new Date().toLocaleString()}</p>
           </div>
         </div>
-      `
+      `,
     }
 
     // Send both emails
     await Promise.all([
       transporter.sendMail(subscriberMailOptions),
-      transporter.sendMail(companyMailOptions)
+      transporter.sendMail(companyMailOptions),
     ])
 
-    return NextResponse.json({ 
-      message: 'Subscription successful! Please check your email.' 
+    return NextResponse.json({
+      message: 'Subscription successful! Please check your email.',
     })
   } catch (error) {
     console.error('Newsletter subscription error:', error)
