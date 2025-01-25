@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import React, { useState } from "react";
 import { 
@@ -71,8 +72,11 @@ export default function ContactForm() {
     const [selectedCountry, setSelectedCountry] = useState("");
     const [date, setDate] = useState<Date | undefined>(undefined);
 
-    const handleSubmit = async (formData: FormData) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault(); // Prevent the default form submission behavior
         setIsLoading(true);
+
+        const formData = new FormData(e.currentTarget);
 
         try {
             // Ensure a country is selected
@@ -89,15 +93,16 @@ export default function ContactForm() {
                 return;
             }
 
-            
-            formData.append('arrivalDate', date.toISOString());
-            formData.append('country', selectedCountry);
+            formData.append("arrivalDate", date.toISOString());
+            formData.append("country", selectedCountry);
 
             const result = await sendEmail(null, formData);
 
             if (result.success) {
                 alert.success("Message Sent Successfully");
-               
+
+                // Reset form fields
+                e.currentTarget.reset();
                 setSelectedCountry("");
                 setDate(undefined);
             } else {
@@ -108,11 +113,13 @@ export default function ContactForm() {
                 error instanceof Error
                     ? error.message
                     : "An unexpected error occurred";
-            alert.error(errorMsg);
+            // alert.error(errorMsg);
         } finally {
             setIsLoading(false);
         }
     };
+
+    
 
     return (
         <div>
@@ -125,57 +132,54 @@ export default function ContactForm() {
                 <div className="container mx-auto px-4 py-16">
                     <div className="w-full mx-auto rounded-lg md:p-8">
                         <form
-                            action={handleSubmit}
-                            className="flex-row space-y-6 md:grid md:grid-cols-2 md:space-y-0 text-customGray gap-6 "
+                            onSubmit={handleSubmit} // Attach the handleSubmit function here
+                            className="flex-row space-y-6 md:grid md:grid-cols-2 md:space-y-0 text-customGray gap-6"
                         >
                             <div className="col-span-1">
-                            <Input
-                                type="text"
-                                name="name"
-                                placeholder="Name"
-                                required
-                                disabled={isLoading}
-                                className="bg-white border-none rounded-[36px] pl-5 text-customGray pt-3"
-                            />
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name"
+                                    required
+                                    disabled={isLoading}
+                                    className="bg-white border-none rounded-[36px] pl-5 text-customGray pt-3"
+                                />
                             </div>
 
-                            <div> <Input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                required
-                                disabled={isLoading}
-                                className="bg-white border-none rounded-[36px] pl-5 pt-3"
-                            /></div>
-                            <div> <Input
-                                type="tel"
-                                name="phone"
-                                placeholder="Phone"
-                                required
-                                disabled={isLoading}
-                                className="bg-white border-none rounded-[36px] pl-5 pt-3"
-                            /></div>
-                            
-                            
-                           
-                           
+                            <div>
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                    disabled={isLoading}
+                                    className="bg-white border-none rounded-[36px] pl-5 pt-3"
+                                />
+                            </div>
+                            <div>
+                                <Input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone"
+                                    required
+                                    disabled={isLoading}
+                                    className="bg-white border-none rounded-[36px] pl-5 pt-3"
+                                />
+                            </div>
+
                             <Select
                                 name="country"
                                 value={selectedCountry}
                                 required
                                 onValueChange={(value) => setSelectedCountry(value)}
                                 disabled={isLoading}
-                                
                             >
                                 <SelectTrigger className="bg-white z-50 border-none rounded-[36px] pl-5 pt-3">
                                     <SelectValue placeholder="Country" />
                                 </SelectTrigger>
                                 <SelectContent className="bg-customSilver text-customGreen rounded-[36px] px-3 pt-3 max-h-[300px] overflow-y-auto">
                                     {countries.map((country) => (
-                                        <SelectItem 
-                                            key={country} 
-                                            value={country}
-                                        >
+                                        <SelectItem key={country} value={country}>
                                             {country}
                                         </SelectItem>
                                     ))}
@@ -187,7 +191,7 @@ export default function ContactForm() {
                                         variant={"outline"}
                                         className={cn(
                                             "w-full justify-between text-left bg-white border-none rounded-[36px] pl-5 pt-3 text-[#9CA3AF] font-medium",
-                                            date && "text-[#9CA3AF]"
+                                            date ? "text-customGray" : "text-[#9CA3AF]"
                                         )}
                                     >
                                         {date ? format(date, "PPP") : "Arrival Date"}
