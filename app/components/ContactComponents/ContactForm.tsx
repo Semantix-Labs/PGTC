@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
-import React, { useState } from "react";
+import React, { useState,useRef  } from "react";
 import { 
     Select, 
     SelectContent, 
@@ -71,22 +71,29 @@ export default function ContactForm() {
     const [isLoading, setIsLoading] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState("");
     const [date, setDate] = useState<Date | undefined>(undefined);
+    const formRef = useRef<HTMLFormElement>(null);
+
+    const resetForm = () => {
+        if (formRef.current) {
+            formRef.current.reset();
+            setSelectedCountry("");
+            setDate(undefined);
+        }
+    };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); // Prevent the default form submission behavior
+        e.preventDefault();
         setIsLoading(true);
 
         const formData = new FormData(e.currentTarget);
 
         try {
-            // Ensure a country is selected
             if (!selectedCountry) {
                 alert.warn("Please select a country.");
                 setIsLoading(false);
                 return;
             }
 
-            // Add date validation if required
             if (!date) {
                 alert.warn("Please select an arrival date.");
                 setIsLoading(false);
@@ -100,26 +107,17 @@ export default function ContactForm() {
 
             if (result.success) {
                 alert.success("Message Sent Successfully");
-
-                // Reset form fields
-                e.currentTarget.reset();
-                setSelectedCountry("");
-                setDate(undefined);
+                resetForm(); // Use the new reset function
             } else {
                 alert.warn(result.message);
             }
         } catch (error) {
-            const errorMsg =
-                error instanceof Error
-                    ? error.message
-                    : "An unexpected error occurred";
-            // alert.error(errorMsg);
+            const errorMsg = error instanceof Error ? error.message : "An unexpected error occurred";
+            alert.error(errorMsg); // Fixed: Uncommented the error alert
         } finally {
             setIsLoading(false);
         }
     };
-
-    
 
     return (
         <div>
@@ -132,7 +130,8 @@ export default function ContactForm() {
                 <div className="container mx-auto px-4 py-16">
                     <div className="w-full mx-auto rounded-lg md:p-8">
                         <form
-                            onSubmit={handleSubmit} // Attach the handleSubmit function here
+                            ref={formRef}
+                            onSubmit={handleSubmit}
                             className="flex-row space-y-6 md:grid md:grid-cols-2 md:space-y-0 text-customGray gap-6"
                         >
                             <div className="col-span-1">
