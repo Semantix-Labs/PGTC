@@ -64,17 +64,23 @@ export default function PhotoGallery({ photos }: { photos: MediaItem[] }) {
       {activeVideo !== null && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center"
-          onClick={() => setActiveVideo(null)}
+          onClick={(e) => {
+            // Only close if clicking the overlay background
+            if (e.target === e.currentTarget) {
+              setActiveVideo(null);
+            }
+          }}
         >
-          {/* Prevent click propagation on the video to stop closing the modal */}
           <div 
             className="relative max-w-full max-h-full"
-            onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button 
               className="absolute top-2 right-2 z-60 bg-white/30 hover:bg-white/50 rounded-full p-2"
-              onClick={() => setActiveVideo(null)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveVideo(null);
+              }}
             >
               <X className="text-white w-6 h-6" />
             </button>
@@ -82,7 +88,8 @@ export default function PhotoGallery({ photos }: { photos: MediaItem[] }) {
             <video 
               controls 
               autoPlay 
-              className="max-w-full max-h-full"
+              className="md:max-w-[1000px] max-h-full"
+              onClick={(e) => e.stopPropagation()}
             >
               <source 
                 src={photos.find(p => p.id === activeVideo)?.src} 

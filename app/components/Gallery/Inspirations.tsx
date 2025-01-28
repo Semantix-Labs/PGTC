@@ -86,7 +86,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 11,
     type: 'image',
-    src: '/home/gallery/12.png',
+    src: '/home/gallery3/12.png',
     thumbnail: '/home/gallery3/12.png',
     alt: 'Pool activities'
   },
