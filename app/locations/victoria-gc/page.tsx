@@ -26,7 +26,8 @@ export default function page() {
     src: '/videos/Kandy.mp4',
     alt: 'Golfer taking a swing',
     className: 'col-span-2 row-span-2',
-    type:'video'
+    type:'video',
+    poster: '/home/nuwara/1.png'
   },
   {
     id: 2,
