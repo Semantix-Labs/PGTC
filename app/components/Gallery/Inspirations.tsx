@@ -51,7 +51,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 6,
     type: 'image',
-    src: '/home/gallery/4.png',
+    src: '/home/gallery3/4.png',
     thumbnail: '/home/gallery3/4.png',
     alt: 'Pool activities'
   },
@@ -86,7 +86,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 11,
     type: 'image',
-    src: '/home/gallery/12.png',
+    src: '/home/gallery3/12.png',
     thumbnail: '/home/gallery3/12.png',
     alt: 'Pool activities'
   },
