@@ -79,7 +79,7 @@ export default function page() {
         },
         {
             name: "Tea Museum",
-            image: "/packages/colombo/5.png",
+            image: "/home/nuwara/tea.png",
             href: "Tea Museum",
           },
         {
@@ -94,7 +94,7 @@ export default function page() {
         },
         {
           name: "Hanthana Bird Park",
-          image: "/packages/colombo/8.png",
+          image: "/home/nuwara/bird.jpeg",
           href: "Hanthana Bird Park",
         },
        
