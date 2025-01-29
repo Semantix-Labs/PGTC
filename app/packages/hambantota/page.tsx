@@ -88,9 +88,9 @@ export default function page() {
           href: "Hummanaya",
         },
         {
-          name: "Thangalla Beach",
+          name: "Tangalla Beach",
           image: "/packages/hambantota/7.png",
-          href: "Thangalla Beach",
+          href: "Tangalla Beach",
         },
         {
           name: "Bundala",
