@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <div className="">
-      <HeroSection maxWidth="max-w-5xl" headerText="Discover the Perfect Swing in Paradise" normalText="Explore Sri Lanka's breathtaking scenery and top golf courses  with PGTC" imageLocation="/home/homegolf.jpeg"/>
+      <HeroSection maxWidth="max-w-5xl" headerText="Nature’s Beauty Surrounding Sri Lanka’s Golf Courses" headerText2="Explore Sri Lanka's breathtaking scenery and top golf courses  with PGTC" normalText="Step into a world of breathtaking beauty, featuring the stunning landscapes and serene settings surrounding Sri Lanka’s renowned golf clubs. From lush fairways nestled in rolling hills to tranquil waters and majestic backdrops, each scene captures the essence of natural elegance and golfing charm. Experience the unique allure of these extraordinary locations, where world-class golf courses blend seamlessly with the island’s vibrant scenery and timeless appeal." imageLocation="/home/homegolf.jpeg"/>
       <FeaturesSection/>
       <FeaturedLocations/>
       <LuxuryAdventure/>

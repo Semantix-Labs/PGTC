@@ -8,9 +8,9 @@ export default function page() {
   return (
    <div className=" ">
     
-     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Victoria Golf & Country Resort" normalText="“If ever there was an antique piece then this would be it. Very little has changed over the years including the clubhouse which is remarkably beautiful and intimate (and all that)......The golf is laid out on only 92 acres  / 37 ha so you can imagine how creative the layout is. This is adventure golf at its best and its enthralling. I could play this course everyday and still be entertained and have a blast”. - Paul Jansen Golf Course Architect" imageLocation="/home/kandyhome.jpeg"/>
+     <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="Victoria Golf Resort" normalText="“If ever there was an antique piece then this would be it. Very little has changed over the years including the clubhouse which is remarkably beautiful and intimate (and all that)......The golf is laid out on only 92 acres  / 37 ha so you can imagine how creative the layout is. This is adventure golf at its best and its enthralling. I could play this course everyday and still be entertained and have a blast”. - Paul Jansen Golf Course Architect" imageLocation="/home/kandyhome.jpeg"/>
      <Overview  details={[
-      { label: 'Name', value: 'Victoria Golf & Country Resort', valueColor: 'text-customGold' },
+      { label: 'Name', value: 'Victoria Golf Resort', valueColor: 'text-customGold' },
       { label: 'Location', value: 'Rajawella, Kandy', valueColor: 'text-customGold' },
       { label: 'Established', value: '1999', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'Native cow grass & Bermuda', valueColor: 'text-customGold' },
@@ -18,7 +18,8 @@ export default function page() {
       { label: 'Par', value: '73', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '72.1/131', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },
-      { label: 'Description', value: 'Resort course with closed community', valueColor: 'text-customGold' },
+      {label:'Website Link',value:'Victoria Golf Resort',valueColor: 'text-customGold',webLink:'https://www.golfsrilanka.com/'},
+      { label: 'Description', value: 'Resort course within closed community', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[
   {
