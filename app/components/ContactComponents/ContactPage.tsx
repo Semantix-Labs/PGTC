@@ -1,13 +1,13 @@
-import { Mail, Phone, MapPin, Facebook, Youtube, Instagram, Twitter, Music } from 'lucide-react'
+import { Mail,  MapPin, Facebook,  Instagram,  } from 'lucide-react'
 import { Card, CardContent } from "../ui/card"
+import { FaWhatsapp , FaTiktok } from "react-icons/fa";
 
 export default function ContactPage() {
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "X (Twitter)" },
-    { icon: Music, href: "#", label: "TikTok" },
+    {icon:FaTiktok , href: "#", label: "Tiktok" },
+  
   ]
 
   const contactInfo = [
@@ -17,7 +17,7 @@ export default function ContactPage() {
       details: "info@paradisegolftours.com",
     },
     {
-      icon: Phone,
+      icon: FaWhatsapp ,
       title: "Phone",
       details: "+94 773 938 932",
     },
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <div>
             <h1 className="text-4xl font-bold text-[#2F5233] mb-4">Get in Touch</h1>
             <p className="text-lg text-[#D4AF37]">
-            Contact us for Scenic Tours, luxury packages, and unforgettable golf vacations in Sri Lanka.
+            {/* Contact us for Scenic Tours, luxury packages, and unforgettable golf vacations in Sri Lanka. */}
             </p>
           </div>
 

@@ -18,6 +18,7 @@ export default function page() {
       { label: 'Par', value: '71', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '71.3/127', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFEAGLE', valueColor: 'text-customGold' },
+      { label: 'Website Link', value: 'Royal Colombo GC', valueColor: 'text-customGold',webLink:'https://www.rcgcsl.com/' },
       { label: 'Description', value: 'City parkland course, Second oldest Royal golf club outside the UK', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[

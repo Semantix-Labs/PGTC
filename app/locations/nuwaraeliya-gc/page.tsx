@@ -18,6 +18,7 @@ export default function page() {
       { label: 'Par', value: '71', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.7 / 129 White Tee (men)', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'BLUE GRASS', valueColor: 'text-customGold' },
+      { label: 'Website Link', value: 'Nuwara Eliya Golf Club', valueColor: 'text-customGold', webLink:'https://www.nuwaraeliyagolfclub.com/' },
       { label: 'Description', value: 'Hillside, Parkland course, with lots of hills and valleys with mature trees', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[
