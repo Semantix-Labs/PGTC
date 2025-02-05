@@ -88,13 +88,18 @@ export default function page() {
           href: "Red Mosque",
         },
         {
-          name: "Floating Market",
-          image: "/packages/colombo/7.png",
+          name: "Colombo Dutch Museum",
+          image: "/packages/colombo/dutch.jpeg",
           href: "Floating Market",
         },
         {
           name: "Lotus Tower",
           image: "/packages/colombo/8.png",
+          href: "Lotus Tower",
+        },
+        {
+          name: "Colombo’s Street Foods",
+          image: "/packages/colombo/street.jpeg",
           href: "Lotus Tower",
         },
       ]} />

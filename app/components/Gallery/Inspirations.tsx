@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
-import { ChevronLeft, ChevronRight, X, Play } from 'lucide-react'
+import { X } from 'lucide-react'
 
 interface MediaItem {
   id: number
@@ -102,151 +102,70 @@ const mediaItems: MediaItem[] = [
 ]
 
 export default function Inspirations() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const thumbnailRef = useRef<HTMLDivElement>(null)
+  const [selectedImage, setSelectedImage] = useState<MediaItem | null>(null)
 
-  const currentItem = mediaItems[currentIndex]
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % mediaItems.length)
+  const openModal = (item: MediaItem) => {
+    setSelectedImage(item)
   }
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + mediaItems.length) % mediaItems.length)
-  }
-
-  const openModal = (index: number) => {
-    setCurrentIndex(index)
-    setIsModalOpen(true)
-  }
-
-  const scrollLeft = () => {
-    if (thumbnailRef.current) {
-      thumbnailRef.current.scrollLeft -= 200
-    }
-  }
-
-  const scrollRight = () => {
-    if (thumbnailRef.current) {
-      thumbnailRef.current.scrollLeft += 200
-    }
+  const closeModal = () => {
+    setSelectedImage(null)
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 md:py-24">
-      <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
+    <div className="container mx-auto px-4 pb-4 ">
+      {/* <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
         Activity
-      </h1>
+      </h1> */}
+
+      {/* Image Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+        {mediaItems.map((item) => (
+          <div
+            key={item.id}
+            className="relative rounded-lg overflow-hidden cursor-pointer aspect-square"
+            onClick={() => openModal(item)}
+          >
+            <Image
+              src={item.src}
+              alt={item.alt}
+              fill
+              className="object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+        ))}
+      </div>
 
       {/* Modal */}
-      {isModalOpen && (
+      {selectedImage && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
           <button
-            onClick={() => setIsModalOpen(false)}
+            onClick={closeModal}
             className="absolute top-4 right-4 text-white hover:text-gray-300 z-50"
             aria-label="Close gallery"
           >
             <X className="w-8 h-8" />
           </button>
 
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-2"
-            aria-label="Previous image"
-          >
-            <ChevronLeft className="w-6 h-6 text-white" />
-          </button>
-
           <div className="relative w-full max-w-5xl aspect-video">
-            {currentItem.type === 'video' ? (
+            {selectedImage.type === 'video' ? (
               <video
-                src={currentItem.src}
+                src={selectedImage.src}
                 controls
                 className="w-full h-full object-contain"
                 autoPlay
               />
             ) : (
               <Image
-                src={currentItem.src}
-                alt={currentItem.alt}
+                src={selectedImage.src}
+                alt={selectedImage.alt}
                 fill
                 className="object-contain"
               />
             )}
           </div>
-
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-2"
-            aria-label="Next image"
-          >
-            <ChevronRight className="w-6 h-6 text-white" />
-          </button>
         </div>
       )}
-
-      {/* Main Preview */}
-      <div className="relative rounded-2xl overflow-hidden mb-4 aspect-video">
-        {currentItem.type === 'video' ? (
-          <video
-            src={currentItem.src}
-            controls
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <Image
-            src={currentItem.src}
-            alt={currentItem.alt}
-            fill
-            className="object-cover"
-          />
-        )}
-      </div>
-
-      {/* Thumbnails */}
-      <div className="relative">
-        <button
-          onClick={scrollLeft}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-2 z-10"
-          aria-label="Scroll thumbnails left"
-        >
-          <ChevronLeft className="w-6 h-6 text-white bg-customGreen " />
-        </button>
-        <div
-          ref={thumbnailRef}
-          className="flex overflow-x-scroll scroll-smooth gap-4 py-2 scrollbar-hide"
-        >
-          {mediaItems.map((item, index) => (
-            <button
-              key={item.id}
-              onClick={() => openModal(index)}
-              className={`relative w-48 h-48 rounded-lg overflow-hidden flex-shrink-0 ${
-                index === currentIndex ? ' border-2 border-customGreen' : ''
-              }`}
-            >
-              <Image
-                src={item.thumbnail}
-                alt={item.alt}
-                fill
-                className="object-cover"
-              />
-              {item.type === 'video' && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                  <Play className="w-8 h-8 text-white" />
-                </div>
-              )}
-            </button>
-          ))}
-        </div>
-        <button
-          onClick={scrollRight}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-2 z-10"
-          aria-label="Scroll thumbnails right"
-        >
-          <ChevronRight className="w-6 h-6 text-white bg-customGreen" />
-        </button>
-      </div>
     </div>
   )
 }

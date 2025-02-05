@@ -18,6 +18,7 @@ export default function page() {
       { label: 'Par', value: '70', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.9 / 127 Blue Tees', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },
+      { label: 'Website Link', value: 'Shangri-La Golf & Country Resort', valueColor: 'text-customGold',webLink:'https://www.shangri-la.com/hambantota/shangrila/golf/' },
       { label: 'Description', value: 'Sea side resort course, From a disused sapphire mine', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[

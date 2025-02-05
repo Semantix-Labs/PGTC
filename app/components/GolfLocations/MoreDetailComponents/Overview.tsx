@@ -1,5 +1,5 @@
 interface OverViewPops{
-  details: { label: string; value: string; valueColor: string }[]
+  details: { label: string; value: string; valueColor: string ,webLink?:string}[]
 }
 
 
@@ -14,7 +14,7 @@ export default function Overview(details: OverViewPops) {
           
           <div className=" mx-auto rounded-xl p-6 md:p-8">
             <div className="grid md:grid-cols-2 gap-6">
-            {details.details.map((detail: { label: string; value: string; valueColor: string }, index) => (
+            {details.details.map((detail: { label: string; value: string; valueColor: string, webLink?: string }, index) => (
                 <div 
                   key={index} 
                   className={`flex gap-4 items-start ${
@@ -25,7 +25,13 @@ export default function Overview(details: OverViewPops) {
                     {detail.label}
                   </div>
                   <div className="text-left">
-                    : <span className={detail.valueColor}>{detail.value}</span>
+                    : {detail.webLink ? (
+                      <a href={detail.webLink} target="_blank" rel="noopener noreferrer" className={`${detail.valueColor} underline cursor-pointer`}>
+                        {detail.value}
+                      </a>
+                    ) : (
+                      <span className={detail.valueColor}>{detail.value}</span>
+                    )}
                   </div>
                 </div>
               ))}
@@ -35,5 +41,3 @@ export default function Overview(details: OverViewPops) {
       </section>
     )
   }
-  
-  

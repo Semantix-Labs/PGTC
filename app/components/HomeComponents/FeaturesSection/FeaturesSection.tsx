@@ -15,7 +15,7 @@ const features = [
   {
     icon: '/home/bag.png',
     title: "Scenic Locations",
-    description: "PGTC offer breathtaking scenic locations, featuring lush greenery, serene landscapes, and tranquil natural beauty."
+    description: "PGTC offers breathtaking scenic locations, featuring lush greenery, serene landscapes, and tranquil natural beauty."
   }
 ]
 
