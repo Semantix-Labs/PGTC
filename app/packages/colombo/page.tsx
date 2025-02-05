@@ -67,7 +67,7 @@ export default function page() {
           href: "Viharamaha Devi Park",
         },
         {
-          name: "Gall Face",
+          name: "Galle Face",
           image: "/packages/colombo/3.png",
           href: "Gall Face",
         },

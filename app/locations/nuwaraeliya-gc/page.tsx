@@ -17,7 +17,7 @@ export default function page() {
       { label: 'Other', value: "Caddy's are available, Pro shop", valueColor: 'text-customGold' },
       { label: 'Par', value: '71', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.7 / 129 White Tee (men)', valueColor: 'text-customGold' },
-      { label: 'Greens', value: 'Gras Blues', valueColor: 'text-customGold' },
+      { label: 'Greens', value: 'BLUE GRASS', valueColor: 'text-customGold' },
       { label: 'Description', value: 'Hillside, Parkland course, with lots of hills and valleys with mature trees', valueColor: 'text-customGold' },
     ]}/>
      <PhotoGallery photos={[
