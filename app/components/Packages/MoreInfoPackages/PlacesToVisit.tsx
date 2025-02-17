@@ -26,6 +26,7 @@ export default function PlacesToVisit(places:PlacesToVisitPropes) {
             key={place.name}
             className={`relative group overflow-hidden rounded-lg ${place.className || ""}`}
           >
+            <a href={`https://www.google.com/search?q=${encodeURIComponent(place.href)}`} target="_blank" rel="noopener noreferrer">
             <div className="relative group col-span-1 row-span-1 h-[300px] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-[1.02]">
               <Image
                 src={place.image}
@@ -38,10 +39,10 @@ export default function PlacesToVisit(places:PlacesToVisitPropes) {
                 {place.name}
               </h2>
             </div>
+            </a>
           </div>
         ))}
       </div>
     </div>
   )
 }
-

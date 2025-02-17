@@ -1,6 +1,6 @@
 
 import HeroSection from "../../components/HomeComponents/HeroSection/HeroSection";
-import OverviewSection from "../../components/Packages/MoreInfoPackages/OverviewSection";
+// import OverviewSection from "../../components/Packages/MoreInfoPackages/OverviewSection";
 import PlacesToVisit from "../../components/Packages/MoreInfoPackages/PlacesToVisit";
 
 
@@ -9,7 +9,7 @@ export default function page() {
     <div className=" ">
 
       <HeroSection buttonsHidden="hidden" maxWidth="max-w-[818px]" headerText="COLOMBO" normalText="Colombo, the bustling capital of Sri Lanka, is a vibrant metropolis combining modern life with historical charm. Known for its tropical climate, lively streets, and dynamic atmosphere, the city offers a unique blend of cultures, architecture, and cuisines. Colombo's landmarks, markets, and coastal vistas make it a captivating destination for travelers seeking energy and heritage." imageLocation="/packages/colombo/head.jpeg" />
-      <OverviewSection activities={[
+      {/* <OverviewSection activities={[
         {
           title: 'Visit Galle Face Green',
           description: 'Relax by the ocean at Colombo’s most famous open space, ideal for a stroll or enjoying street food.'
@@ -54,7 +54,7 @@ export default function page() {
         paragraph1={`Colombo, established as a major port by colonial powers, developed into a bustling urban center and the commercial capital of Sri Lanka. Its colonial heritage is reflected in its architecture, with grand old buildings, historic churches, and a sprawling fort area that highlight its history as a hub of trade and governance. The city also became a melting pot of cultures, contributing to its dynamic character.`}
         paragraph2={`Renowned for its vibrant cosmopolitan vibe, Colombo offers a dynamic contrast to Sri Lanka's more tranquil regions. Temperatures typically range from 26°C to 31°C, with warm, sunny days and occasional tropical rains. The city’s bustling streets, modern skyscrapers, and coastal views create a dynamic setting for both business and leisure.`}
         paragraph3={`Traveling through Colombo is a cultural delight, from exploring bustling markets and historic landmarks to savoring diverse cuisine and vibrant nightlife. Its energetic ambiance and cultural richness offer an exciting urban experience for all types of travelers.`}
-      />
+      /> */}
       <PlacesToVisit places={[
         {
           name: "GangaramaTemple",
@@ -62,9 +62,9 @@ export default function page() {
           href: "GangaramaTemple",
         },
         {
-          name: "Viharamaha Devi Park",
-          image: "/packages/colombo/2.png",
-          href: "Viharamaha Devi Park",
+          name: "The Old Dutch House Resurants",
+          image: "/Dutch-Hospital-1.jpg",
+          href: "The Old Dutch House Resurants",
         },
         {
           name: "Galle Face",
@@ -100,7 +100,7 @@ export default function page() {
         {
           name: "Colombo’s Street Foods",
           image: "/packages/colombo/street.jpeg",
-          href: "Lotus Tower",
+          href: "Colombo’s Street Foods",
         },
       ]} />
 
