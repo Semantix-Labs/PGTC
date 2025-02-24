@@ -89,8 +89,8 @@ export default function page() {
         },
         {
           name: "Colombo Dutch Museum",
-          image: "/packages/colombo/dutch.jpeg",
-          href: "Floating Market",
+          image: "/musiam.jpg",
+          href: "Colombo Dutch Museum",
         },
         {
           name: "Lotus Tower",
