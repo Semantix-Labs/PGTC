@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef} from 'react'
 import Image from 'next/image'
-import { X } from 'lucide-react'
+import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface MediaItem {
   id: number
@@ -96,28 +96,65 @@ const mediaItems: MediaItem[] = [
     src: '/home/gallery3/13.png',
     thumbnail: '/home/gallery3/13.png',
     alt: 'Pool activities'
-  },
- 
- 
+  }
 ]
 
 export default function Inspirations() {
   const [selectedImage, setSelectedImage] = useState<MediaItem | null>(null)
+  const [currentIndex, setCurrentIndex] = useState<number>(0)
+  const modalContentRef = useRef<HTMLDivElement>(null)
 
   const openModal = (item: MediaItem) => {
     setSelectedImage(item)
+    // Find the index of the selected item
+    const index = mediaItems.findIndex(mediaItem => mediaItem.id === item.id)
+    setCurrentIndex(index)
   }
 
   const closeModal = () => {
     setSelectedImage(null)
   }
 
-  return (
-    <div className="container mx-auto px-4 pb-4 ">
-      {/* <h1 className="text-customGreen text-4xl md:text-6xl font-semibold text-center mb-12">
-        Activity
-      </h1> */}
+  const goToNext = (e: React.MouseEvent) => {
+    e.stopPropagation() // Prevent modal from closing
+    const newIndex = (currentIndex + 1) % mediaItems.length
+    setCurrentIndex(newIndex)
+    setSelectedImage(mediaItems[newIndex])
+  }
 
+  const goToPrevious = (e: React.MouseEvent) => {
+    e.stopPropagation() // Prevent modal from closing
+    const newIndex = (currentIndex - 1 + mediaItems.length) % mediaItems.length
+    setCurrentIndex(newIndex)
+    setSelectedImage(mediaItems[newIndex])
+  }
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowRight') {
+      goToNext(e as unknown as React.MouseEvent)
+    } else if (e.key === 'ArrowLeft') {
+      goToPrevious(e as unknown as React.MouseEvent)
+    } else if (e.key === 'Escape') {
+      closeModal()
+    }
+  }
+
+  // Close modal when clicking outside the image and navigation controls
+  const handleModalClick = (e: React.MouseEvent) => {
+    // Only close if clicking directly on the backdrop
+    if (e.target === e.currentTarget) {
+      closeModal()
+    }
+  }
+
+  // Prevent close when clicking on image
+  const handleImageClick = (e: React.MouseEvent) => {
+    e.stopPropagation() // Prevent the click from propagating to the modal background
+  }
+
+  return (
+    <div className="container mx-auto px-4 pb-4">
       {/* Image Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
         {mediaItems.map((item) => (
@@ -138,22 +175,52 @@ export default function Inspirations() {
 
       {/* Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+          onClick={handleModalClick}
+          onKeyDown={handleKeyDown}
+          tabIndex={0}
+        >
           <button
-            onClick={closeModal}
+            onClick={(e) => {
+              e.stopPropagation()
+              closeModal()
+            }}
             className="absolute top-4 right-4 text-white hover:text-gray-300 z-50"
             aria-label="Close gallery"
           >
             <X className="w-8 h-8" />
           </button>
-
-          <div className="relative w-full max-w-5xl aspect-video">
+          
+          {/* Navigation buttons */}
+          <button
+            onClick={goToPrevious}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 rounded-full p-2 text-white hover:bg-black/70 transition"
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="w-8 h-8" />
+          </button>
+          
+          <button
+            onClick={goToNext}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 rounded-full p-2 text-white hover:bg-black/70 transition"
+            aria-label="Next image"
+          >
+            <ChevronRight className="w-8 h-8" />
+          </button>
+          
+          <div 
+            className="relative w-full max-w-5xl aspect-video"
+            onClick={handleImageClick}
+            ref={modalContentRef}
+          >
             {selectedImage.type === 'video' ? (
               <video
                 src={selectedImage.src}
                 controls
                 className="w-full h-full object-contain"
                 autoPlay
+                onClick={handleImageClick}
               />
             ) : (
               <Image
@@ -161,8 +228,17 @@ export default function Inspirations() {
                 alt={selectedImage.alt}
                 fill
                 className="object-contain"
+                onClick={handleImageClick}
               />
             )}
+          </div>
+          
+          {/* Image counter */}
+          <div 
+            className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black/50 px-4 py-2 rounded-full"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking on counter
+          >
+            {currentIndex + 1} / {mediaItems.length}
           </div>
         </div>
       )}
