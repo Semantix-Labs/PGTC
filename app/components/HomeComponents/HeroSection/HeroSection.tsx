@@ -9,10 +9,11 @@ interface HeroSectionProps {
   imageLocation:string;
   maxWidth:string;
   buttonsHidden?:string;
+  mobileMarginTop?:string
 }
 
 
-export default function HeroSection({ headerText, normalText, imageLocation,maxWidth,buttonsHidden ,headerText2}: HeroSectionProps) {
+export default function HeroSection({ headerText, normalText, imageLocation,maxWidth,buttonsHidden ,headerText2,mobileMarginTop}: HeroSectionProps) {
   return (
     <div className="relative min-h-[600px] lg:max-h-[990px] ">
       {/* Background Image */}
@@ -27,7 +28,7 @@ export default function HeroSection({ headerText, normalText, imageLocation,maxW
       </div>
       
       {/* Content Overlay */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-[600px] lg:min-h-[990px] text-center px-4 bg-black/20">
+      <div className={`relative z-10 flex flex-col items-center justify-center min-h-[600px] lg:min-h-[990px] text-center px-4 bg-black/20 ${mobileMarginTop ? mobileMarginTop :'pt-24 md:pt-0'}`}>
         <h1 className="text-4xl md:text-6xl lg:text-[90px] font-bold text-white mb-4 max-w-7xl leading-tight ">
          {headerText}
         </h1>
