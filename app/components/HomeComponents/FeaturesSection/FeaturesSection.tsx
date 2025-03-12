@@ -10,12 +10,12 @@ const features = [
   {
     icon: '/home/2.png',
     title: "Expert Guides",
-    description: "We offer expert guides ensuring personalized, insightful, and memorable travel experiences for every journey."
+    description: "We offer expert guides ensuring insightful, and memorable travel experiences for every journey."
   },
   {
     icon: '/home/bag.png',
     title: "Scenic Locations",
-    description: "PGTC offers breathtaking scenic locations, featuring lush greenery, serene landscapes, and tranquil natural beauty."
+    description: "PGTC offers breathtaking scenic locations featuring lush greenery and tranquil natural beauty."
   }
 ]
 
@@ -26,7 +26,7 @@ export default function FeaturesSection() {
     <section className="py-16  md:py-24">
       <div className="container mx-auto px-5 xl:px-auto">
         <h2 className="text-4xl md:text-5xl lg:text-[72px] font-semibold text-center text-customGreen mb-16">
-          Why Us?
+        Why PGTC?
         </h2>
         
         <div className="grid md:grid-cols-3 gap-12 md:gap-8">

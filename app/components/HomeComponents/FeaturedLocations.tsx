@@ -21,16 +21,17 @@ const locations: Location[] = [
   },
   {
     id: 2,
-    name: "Kandy",
-    image: "/golf/2.jpeg",
-    locations:"/locations/victoria-gc"
-  },
-  {
-    id: 3,
     name: "Nuwara Eliya",
     image: "/golf/3.jpeg",
     locations:"/locations/nuwaraeliya-gc"
   },
+  {
+    id: 3,
+    name: "Kandy",
+    image: "/golf/2.jpeg",
+    locations:"/locations/victoria-gc"
+  },
+ 
   {
     id: 4,
     name: "Hambantota",
