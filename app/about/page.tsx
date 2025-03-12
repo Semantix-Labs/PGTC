@@ -12,7 +12,7 @@ export default function Page() {
      <CommitmentSection/>
      {/* <TeamCarousel/> */}
      <TeamMembersPage/>
-     <VideoSection/>
+     {/* <VideoSection/> */}
    </div>
   );
 }
