@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import InfoCard from './InfoCard';
+import Image from 'next/image';
 
 const SVGComponent: React.FC = () => {
     const [selectedRegion, setSelectedRegion] = useState('close');
@@ -107,6 +108,9 @@ const SVGComponent: React.FC = () => {
 
     return (
         <div className={`relative max-w-7xl mx-auto md:py-20 `}>
+            <div className='absolute top-[34%] left-[40%] w-full' >
+            <Image src="/logo.png" alt="Divider" width={500} height={1} className='w-[200px] h-auto' />
+            </div>
             <h2 className='text-3xl md:text-[42px] text-customGreen font-bold my-8 text-center'>Tours</h2>
             <svg
                 xmlns="http://www.w3.org/2000/svg"

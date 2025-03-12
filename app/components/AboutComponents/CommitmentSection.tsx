@@ -23,7 +23,7 @@ export default function CommitmentSection() {
               <span className="font-semibold ">Our Vision:</span> Paradise Golf Tours Ceylon (Pvt) Ltd to become the most sought-after golf tourism company specializing in organizing exclusive golf tours and tournaments across the breathtaking landscapes of Sri Lanka.
             </p>
             <p>
-              We aim to deliver a seamless blend of luxury travel, world-class golfing experiences, and personalized services tailored to meet the desires of our clients.
+            We aim to deliver a seamless blend of luxury travel, challenging golfing experiences, and personalized services tailored to meet the desires of our clients.
             </p>
           </div>
         </div>

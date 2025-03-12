@@ -14,7 +14,7 @@ export default function page() {
       { label: 'Location', value: 'Hamabntota , Sri Lanka', valueColor: 'text-customGold' },
       { label: 'Established', value: '2016', valueColor: 'text-customGold' },
       { label: 'Fairways', value: 'Seashore Paspalum ', valueColor: 'text-customGold' },
-      { label: 'Other', value: "Caddy’s & Buggies are available, Pro shop", valueColor: 'text-customGold' },
+      { label: 'Other', value: "Caddies & Buggies are available, Pro shop", valueColor: 'text-customGold' },
       { label: 'Par', value: '70', valueColor: 'text-customGold' },
       { label: 'Slope rating', value: '68.9 / 127 Blue Tees', valueColor: 'text-customGold' },
       { label: 'Greens', value: 'TIFDWARF', valueColor: 'text-customGold' },
