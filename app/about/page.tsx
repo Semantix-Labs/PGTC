@@ -1,7 +1,7 @@
 // import TeamCarousel from "../components/AboutComponents/ TeamCarousel";
 import CommitmentSection from "../components/AboutComponents/CommitmentSection";
 import TeamMembersPage from "../components/AboutComponents/TeamMembersPage";
-import VideoSection from "../components/AboutComponents/VideoSection";
+// import VideoSection from "../components/AboutComponents/VideoSection";
 import HeroSection from "../components/HomeComponents/HeroSection/HeroSection";
 
 
@@ -12,7 +12,7 @@ export default function Page() {
      <CommitmentSection/>
      {/* <TeamCarousel/> */}
      <TeamMembersPage/>
-     <VideoSection/>
+     {/* <VideoSection/> */}
    </div>
   );
 }
