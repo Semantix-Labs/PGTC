@@ -12,7 +12,7 @@ const teamMembers = [
         id: 1,
         name: '"Pin" Fernando',
         title: "The Legend of Sri Lankan Golf",
-        image: "/man.png",
+        image: "/Team/3.png",
         bio: `Late W. Pinsiripal "Pin" Fernando is an iconic name in Sri Lankan golf history, revered as one of the finest golfers the country has ever produced`,
 
         career:
@@ -23,7 +23,7 @@ const teamMembers = [
         name: "Pam Fernando",
         title: "Mother Superior of Sri Lankan Golf",
         image:
-            "/man.png",
+            "/Team/5.png",
         bio: "Late Pam Fernando was a trailblazer in Sri Lankan Ladies golf, setting records that have stood the test of time. As a talented and passionate golfer, she won the Sri Lanka Amateur Golf Championship three times and proudly represented Sri Lanka in the Queen Sirikit Ladies Asian Golf Championship.",
 
         career:
@@ -33,7 +33,7 @@ const teamMembers = [
         id: 3,
         name: "Dilrukshi Martenstyn",
         title: "Cultivating Excellence in Golf and Nature",
-        image: "/man.png",
+        image: "/Team/4.png",
         bio: "As the first daughter of Pin & Pam Fernando she also became the first Junior Golf Champion of Sri Lanka. Beyond her golfing achievements, Dilrukshi’s efforts in fostering cultural ties between Japan and  Sri Lanka were recognized when she was awarded the Foreign Minister's Commendation by the Embassy of Japan in Sri Lanka on 22nd October 2019. ",
 
     },
@@ -42,7 +42,7 @@ const teamMembers = [
         name: "Tirusha Jesudason",
         title: "A Trailblazer in Sri Lankan Women's Golf",
         image:
-            "/man.png",
+            "/Team/1.png",
         bio: "Tirusha Jesudason the second daughter of Pin & Pam Fernando is an Honorary Member of The Royal Colombo Golf Club and a member of the Victoria Golf Resort.",
         achievements: [
             `As an amateur golfer, she won the Sri Lanka Amateur Ladies Golf Championship four times and the Royal Colombo Golf Club Championship five times. Her prowess extended beyond national borders, securing the All-India Amateur Ladies Golf Championship four times and winning amateur championships in Thailand, Hong Kong, Malaysia, and Indonesia. In the USA, she clinched the Utah State Ladies Amateur Championship twice and finished second individually in the Queen Sirikit All Asia Team Championship.`
@@ -56,7 +56,7 @@ const teamMembers = [
         id: 5,
         name: "Priath Fernando",
         title: "A Visionary Leader for Sri Lankan Golf",
-        image: "/man.png",
+        image: "/Team/2.png",
         bio: "His deep-rooted passion for the game, impressive playing career, and outstanding contributions in golf administration has set the path to developing Golf in Schools",
         achievements: [
             `He secured victories in the Sri Lanka Junior Golf Championship, the Royal Colombo Golf Club Championship, and the Nuwara Eliya Golf Club Championship. His talent also led him to represent Sri Lanka in international tournaments held in Sri Lanka, India, and Pakistan.`
@@ -80,9 +80,16 @@ export default function TeamGallery() {
     return (
         <>
             <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 justify-center">
-                {/* First Row: 2 Images */}
                 <div className="md:flex gap-8 justify-center  md:col-span-12">
-                    {teamMembers.slice(0, 2).map((member) => (
+                <div className="mt-16 bg-white rounded-lg shadow-md  md:p-8">
+                <h2 className="text-2xl font-bold text-[#2d5d3d] text-center mb-4">
+                    The Fernando Family - A Legacy of Integrity and Excellence
+                </h2>
+                <p className="text-center px-2 text-[#c99c33]">
+                Dilrukshi, Tirusha, and Priath, as founders of Paradise Golf Tours Ceylon (PGTC), will ensure that every visitor will experience the island&apos;s unique beauty and the warmth of its people. Whether you are coming for a round of golf or to explore the island&apos;s stunning landscapes, you can trust that the Fernando family&apos;s values will be reflected in every aspect of your journey
+                </p>
+                <div className="md:flex justify-center mt-5 space-y-8 md:space-y-0 gap-8">
+                {teamMembers.slice(0, 2).map((member) => (
                         <div
                             key={member.id}
                             className="bg-white rounded-lg shadow-md overflow-hidden xl:w-[400px] lg:w-[350px]"
@@ -108,6 +115,9 @@ export default function TeamGallery() {
                             </div>
                         </div>
                     ))}
+                    </div>
+            </div>
+                 
                 </div>
 
                 {/* Second Row: 3 Images */}
@@ -141,17 +151,7 @@ export default function TeamGallery() {
                 </div>
             </div>
 
-            <div className="mt-16 bg-white rounded-lg shadow-md p-8">
-                <h2 className="text-2xl font-bold text-[#2d5d3d] text-center mb-4">
-                    The Fernando Family - A Legacy of Integrity and Excellence
-                </h2>
-                <p className="text-center text-[#c99c33]">
-                    Dilrukshi, Tirusha, and Priath, as founders of Paradise Golf Tours Ceylon (PGTC), will ensure that every
-                    visitor will experience the island&apos;s unique beauty and the warmth of its people. Whether you are coming for a
-                    round of golf or to explore the island&apos;s stunning landscapes, you can trust that the Fernando family&apos;s values
-                    will be reflected in every aspect of your journey
-                </p>
-            </div>
+        
 
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
                 <DialogContent className="max-h-[500px] lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 !overflow-y-scroll bg-white">
