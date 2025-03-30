@@ -87,6 +87,13 @@ export default function GolfLocations() {
       </h1>
 
       <div className="relative">
+      <button
+            onClick={prevSlide}
+            className="w-12 h-12 flex absolute top-[45%] left-0 xl:-left-12 items-center justify-center bg-customGreen text-white rounded-full hover:bg-customLightGreen hover:text-customGreen transition-colors"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
         <div className="flex flex-nowrap overflow-hidden">
           {visibleLocations.map((location) => (
             <div 
@@ -129,22 +136,16 @@ export default function GolfLocations() {
           ))}
         </div>
 
-        <div className="flex justify-center gap-4 mt-8">
-          <button
-            onClick={prevSlide}
-            className="w-12 h-12 flex items-center justify-center bg-customGreen text-white rounded-full hover:bg-customLightGreen hover:text-customGreen transition-colors"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
+       
+       
           <button
             onClick={nextSlide}
-            className="w-12 h-12 flex items-center justify-center bg-customGreen text-white rounded-full hover:bg-customLightGreen hover:text-customGreen transition-colors"
+            className="w-12 h-12 flex absolute top-[45%] right-0 xl:-right-12 items-center justify-center bg-customGreen text-white rounded-full hover:bg-customLightGreen hover:text-customGreen transition-colors"
             aria-label="Next slide"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
-        </div>
+       
       </div>
     </div>
   )

@@ -22,6 +22,7 @@ const navigation = [
   { name: "Golf Locations", href: "/locations" },
   { name: "Packages", href: "/packages" },
   { name: "Gallery", href: "/gallery" },
+  { name: "Tournaments", href: "/tournaments" },
   { name: "Contact", href: "/contact" },
 ]
 
