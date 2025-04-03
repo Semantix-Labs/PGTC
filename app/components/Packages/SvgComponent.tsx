@@ -108,8 +108,8 @@ const SVGComponent: React.FC = () => {
 
     return (
         <div className={`relative max-w-7xl mx-auto md:py-20 `}>
-            <div className='absolute top-[34%] left-[40%] w-full' >
-            <Image src="/logo.png" alt="Divider" width={500} height={1} className='w-[200px] h-auto' />
+            <div className='absolute top-[34%] left-[22%] md:left-[34%] lg:left-[38%] xl:left-[40%] items-center justify-center' >
+            <Image src="/logo.png" alt="Divider" width={500} height={1} className='w-[150px] md:w-[200px] h-auto flex justify-center items-center' />
             </div>
             <h2 className='text-3xl md:text-[42px] text-customGreen font-bold my-8 text-center'>Tours</h2>
             <svg

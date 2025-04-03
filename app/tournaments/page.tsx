@@ -8,7 +8,9 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("tournaments")
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen  ">
+      
+      <div className=" md:!pt-[120px]   !pt-[100px] "></div>
       <Image
       src="/tournaments/Banner.webp"
       width={2500}
