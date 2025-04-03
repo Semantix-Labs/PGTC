@@ -43,7 +43,7 @@ const teamMembers = [
         title: "A Trailblazer in Sri Lankan Women's Golf",
         image:
             "/Team/1.png",
-        bio: "Tirusha Jesudason the second daughter of Pin & Pam Fernando is an Honorary Member of The Royal Colombo Golf Club and a member of the Victoria Golf Resort.",
+        bio: "Tirusha Jesudason the second daughter of Pin & Pam Fernando is an Honorary Member of The Royal Colombo Golf Club, Life Member of Nuwara Eliya Golf Club,  and a member of the Victoria Golf Resort.",
         achievements: [
             `As an amateur golfer, she won the Sri Lanka Amateur Ladies Golf Championship four times and the Royal Colombo Golf Club Championship five times. Her prowess extended beyond national borders, securing the All-India Amateur Ladies Golf Championship four times and winning amateur championships in Thailand, Hong Kong, Malaysia, and Indonesia. In the USA, she clinched the Utah State Ladies Amateur Championship twice and finished second individually in the Queen Sirikit All Asia Team Championship.`
         ],
@@ -154,7 +154,7 @@ export default function TeamGallery() {
         
 
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-                <DialogContent className="max-h-[500px] lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 !overflow-y-scroll bg-white">
+                <DialogContent className="max-h-[500px] max-w-[320px] md:max-w-[384px]  rounded-lg lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 !overflow-y-scroll bg-white">
                     <div className="relative">
                         <Button
                             variant="ghost"
@@ -168,18 +168,18 @@ export default function TeamGallery() {
 
                     {selectedMember && (
                         <div>
-                            <div className="grid grid-cols-1 md:grid-cols-5  gap-6">
-                                <div className="!col-span-1 md:!col-span-2 ">
+                            <div className="grid grid-cols-1 lg:grid-cols-5  gap-6">
+                                <div className="!col-span-1 lg:!col-span-2 ">
                                     <Image
                                         src={selectedMember.image || "/placeholder.svg"}
                                         alt={selectedMember.name}
                                         fill
-                                        className=" !h-48 lg:!w-96 lg:!h-96 rounded-xl"
+                                        className=" !h-[318px] md:!h-[382px] lg:!w-96 lg:!h-96 rounded-xl"
 
                                     />
                                 </div>
 
-                                <div className="pt-48 md:pt-8 md:p-8 lg:p-8 overflow-y-auto !col-span-1 md:!col-span-3">
+                                <div className="!pt-[300px] md:mt-[202px] lg:mt-[-80px] md:p-8 lg:p-8 overflow-y-auto !col-span-1 md:!col-span-3">
                                     <h2 className="text-4xl lg:text-[96px] lg:leading-[92px] font-semibold text-[#2d5d3d]">{selectedMember.name}</h2>
                                     <p className="text-2xl text-[#c99c33] mt-2 mb-6">{selectedMember.title}</p>
 

@@ -50,8 +50,8 @@ export function SiteHeader() {
         <div className="flex items-center justify-between">
        
         <Link href="/" className="mr-6 flex items-center ">
-          <div className="md:!h-[138px] md:!w-auto  !h-[100px] !w-[88px] rounded-lg -mt-[32px] md:-mt-[68px] bg-white overflow-hidden">
-            <Image src="/logo12.png" width={300} height={300} alt="Paradise Golf Tours Logo" className="object-cover h-full w-full" />
+          <div className="md:!h-[138px] md:!w-[120px]  !h-[100px] !w-[88px] rounded-lg -mt-[32px] md:-mt-[68px] bg-white overflow-hidden">
+            <Image src="/logo12.png" width={300} height={300} alt="Paradise Golf Tours Logo" className="!object-cover" />
           </div>
          
         </Link>
