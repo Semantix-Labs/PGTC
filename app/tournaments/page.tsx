@@ -51,7 +51,7 @@ export default function Home() {
           {activeTab === "tournaments" && (
             <div className="">
               <Image
-              src="/tournaments/bb.webp"
+              src="/tournaments/bannerdd.webp"
               width={800}
               height={400}
               alt="banner"
