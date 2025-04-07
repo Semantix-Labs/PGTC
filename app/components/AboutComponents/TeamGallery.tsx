@@ -50,14 +50,14 @@ const teamMembers = [
         career:
             "In 1981, Tirusha turned professional, becoming the first woman in Southeast Asia to do so. Over an 11-year career on the European Ladies Professional Golf Tour, she achieved several top-10 finishes, with her best performance being fifth in the British Ladies Open Championship. She also competed in tournaments across the USA, Japan, and the Asian Ladies Professional circuits. After retiring from professional golf in 1991, she returned to Sri Lanka and served as a professional golf coach at the Royal Colombo Golf Club. She resigned from professional golf and regained her amateur status in 1998.",
         currentOccupation:
-            "Golf Course Design and Current Occupation.Tirusha has contributed to golf course design, including a 6-hole pitch and putt course at Hunas Falls Hotel and assisting in the design of the Victoria Golf Course in Digana, Kandy.",
+            "Tirusha has contributed to golf course design, including a 6-hole pitch and putt course at Hunas Falls Hotel and assisting in the design of the Victoria Golf Course in Digana, Kandy.",
     },
     {
         id: 5,
         name: "Priath Fernando",
         title: "A Visionary Leader for Sri Lankan Golf",
         image: "/Team/2.png",
-        bio: "His deep-rooted passion for the game, impressive playing career, and outstanding contributions in golf administration has set the path to developing Golf in Schools",
+        bio: "His deep-rooted passion for the game, impressive playing career, and outstanding contributions in golf administration has set the path to developing Golf in Schools In addition to being a Life Member of the Royal Colombo Golf Club (RCGC), his memberships at Nuwara Eliya Golf Club, Victoria Golf Resort, Shangri-La Hambantota Golf Resort, and the prestigious Royal & Ancient Golf Club of St. Andrews, Scotland, will ensure that golfing tourists to Sri Lanka experience excellent service.",
         achievements: [
             `He secured victories in the Sri Lanka Junior Golf Championship, the Royal Colombo Golf Club Championship, and the Nuwara Eliya Golf Club Championship. His talent also led him to represent Sri Lanka in international tournaments held in Sri Lanka, India, and Pakistan.`
         ],
@@ -65,7 +65,9 @@ const teamMembers = [
             `A Qualified Level 2 Rules Official, he has served Sri Lanka Golf Union (SLGU) as Honorary Secretary, Honorary Treasurer, Chairman of the Selection Committee, and President. His leadership has significantly contributed to the development and governance of golf in the country.
 At the Royal Colombo Golf Club, Priath’s dedication to the game is further exemplified by his tenure as both Captain and President, ensuring the continued growth and success of one of Sri Lanka’s most historic golf institutions.
 He is now pursuing the development of golf tourism through this company to give an unforgettable journey through Paradise with Golf
-`   },
+`   ,
+        currentOccupation2:
+            `He is now pursuing the development of golf tourism through this company to give an unforgettable journey through Paradise with Golf`   },
 ]
 
 export default function TeamGallery() {
@@ -81,13 +83,15 @@ export default function TeamGallery() {
         <>
             <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 justify-center">
                 <div className="md:flex gap-8 justify-center  md:col-span-12">
-                <div className="mt-16 bg-white rounded-lg shadow-md  md:p-8">
-                <h2 className="text-2xl font-bold text-[#2d5d3d] text-center mb-4">
+                <div className="mt-10 bg-white rounded-lg shadow-md  md:p-8">
+                <h2 className="text-2xl font-bold text-[#2d5d3d] text-center mb-10 mt-2">
                     The Fernando Family - A Legacy of Integrity and Excellence
                 </h2>
                 <p className="text-center px-2 text-[#c99c33]">
                 Dilrukshi, Tirusha, and Priath, as founders of Paradise Golf Tours Ceylon (PGTC), will ensure that every visitor will experience the island&apos;s unique beauty and the warmth of its people. Whether you are coming for a round of golf or to explore the island&apos;s stunning landscapes, you can trust that the Fernando family&apos;s values will be reflected in every aspect of your journey
                 </p>
+                <h2 className="text-2xl font-bold text-[#2d5d3d] text-center my-8">
+                “A Tour of Paradise with Golf”    </h2>
                 <div className="md:flex justify-center mt-5 space-y-8 md:space-y-0 gap-8">
                 {teamMembers.slice(0, 2).map((member) => (
                         <div
@@ -154,7 +158,7 @@ export default function TeamGallery() {
         
 
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-                <DialogContent className="max-h-[500px] max-w-[320px] md:max-w-[384px]  rounded-lg lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 !overflow-y-scroll bg-white">
+                <DialogContent className="max-h-[500px] max-w-[320px] md:max-w-[384px] md:h-[70vh]  rounded-lg lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 !overflow-y-scroll bg-white">
                     <div className="relative">
                         <Button
                             variant="ghost"
@@ -179,20 +183,20 @@ export default function TeamGallery() {
                                     />
                                 </div>
 
-                                <div className="!pt-[300px] md:mt-[202px] lg:mt-[-80px] md:p-8 lg:p-8 overflow-y-auto !col-span-1 md:!col-span-3">
-                                    <h2 className="text-4xl lg:text-[96px] lg:leading-[92px] font-semibold text-[#2d5d3d]">{selectedMember.name}</h2>
-                                    <p className="text-2xl text-[#c99c33] mt-2 mb-6">{selectedMember.title}</p>
+                                <div className="!pt-[300px] md:!pt-[220px] lg:!pt-[300px] md:mt-[150px] lg:mt-[-190px] md:py-8 lg:p-8 md:px-6 overflow-y-auto !col-span-1 md:!col-span-3">
+                                    <h2 className="text-4xl lg:text-[96px] leading-10 lg:leading-[110px] font-semibold md:text-center lg:text-start text-[#2d5d3d]">{selectedMember.name}</h2>
+                                    <p className="lg:text-2xl text-xl text-[#c99c33] mt-2 mb-6">{selectedMember.title}</p>
 
 
                                 </div>
                             </div>
-                            <div className="px-2 lg:px-12 overflow-y-scroll">
+                            <div className="px-2 lg:px-4 overflow-y-scroll lg:-mt-[110px] md:-mt-[50px]">
                                 <p className="text-gray-700 lg:mt-20 mb-6">{selectedMember.bio}</p>
 
                                 {selectedMember.achievements && selectedMember.achievements.length > 0 && (
                                     <>
                                         <h3 className="text-xl font-semibold text-[#c99c33] mt-6 mb-3">Amateur Golfing Achievements</h3>
-                                        <ul className="list-disc pl-5 text-gray-700 space-y-1">
+                                        <ul className="list-none  text-gray-700 space-y-1">
                                             {selectedMember.achievements.map((achievement, index) => (
                                                 <li key={index}>{achievement}</li>
                                             ))}
@@ -202,7 +206,7 @@ export default function TeamGallery() {
 
                                 {selectedMember.career && (
                                     <>
-                                        {/* <h3 className="text-xl font-semibold text-[#c99c33] mt-6 mb-3">Professional Golfing Career</h3> */}
+                                       {selectedMember.name==="Priath Fernando" || selectedMember.name==="Tirusha Jesudason" && <h3 className="text-xl font-semibold text-[#c99c33] mt-6 mb-3">Professional Golfing Career</h3>}
                                         <p className="text-gray-700">{selectedMember.career}</p>
                                     </>
                                 )}
@@ -210,9 +214,10 @@ export default function TeamGallery() {
                                 {selectedMember.currentOccupation && (
                                     <>
                                         <h3 className="text-xl font-semibold text-[#c99c33] mt-6 mb-3">
-                                      {selectedMember.id===4 ? "  Professional Golfing Career" :"Golf Administration"}
+                                      {selectedMember.id===4 ? "Golf Course Design and Current Occupation" :"Golf Administration"}
                                         </h3>
-                                        <p className="text-gray-700">{selectedMember.currentOccupation}</p>
+                                        <p className="text-gray-700 mb-2">{selectedMember.currentOccupation}</p>
+                                        <p className="text-gray-700">{selectedMember.currentOccupation2}</p>
                                     </>
                                 )}
                             </div>
