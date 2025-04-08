@@ -16,7 +16,13 @@ const teamMembers = [
         bio: `Late W. Pinsiripal "Pin" Fernando is an iconic name in Sri Lankan golf history, revered as one of the finest golfers the country has ever produced`,
 
         career:
-            "Honorary Life Membership of Royal Colombo Golf Club (RCGC) was bestowed posthumously. He was also a member of the Nuwara Eliya Golf Club (NEGC) which was the only other surviving golf course. He was the first Sri Lankan to become a member of the prestigious Royal & Ancient Golf Club of St. Andrews, Scotland. His records as a National Title Holder and Club Championship titles are unmatched. dominance on the golf course saw him a record multiple Sri Lanka Amateur Golf Championships, and at the time of his passing was the only Sri Lankans to have won the All-India Golf Championship twice.",
+            "He was a long-standing and distinguished member of the Royal Colombo Golf Club (RCGC) as well as the Nuwara Eliya Golf Club (NEGC), the latter being the only other operational golf course in Sri Lanka at the time. In recognition of his outstanding contributions to the game, the Royal Colombo Golf Club conferred upon him Honorary Life Membership posthumously.",
+        career2:
+            "A trailblazer in Sri Lankan golf, he was the first Sri Lankan to be admitted to the prestigious Royal & Ancient Golf Club of St. Andrews in Scotland.",
+        career3:
+            "His achievements on the golf course remain unparalleled. A multiple-time National Champion, he also holds the record for the most number of Club Championship titles at the Royal Colombo Golf Club — a feat that stands to this day. His dominance was further underscored by his record number of victories at the Sri Lanka Amateur Golf Championship. ",
+        career4:
+            "At the time of his passing, he was the only Sri Lankan to have won the prestigious All-India Golf Championship twice. ",
     },
     {
         id: 2,
@@ -27,7 +33,9 @@ const teamMembers = [
         bio: "Late Pam Fernando was a trailblazer in Sri Lankan Ladies golf, setting records that have stood the test of time. As a talented and passionate golfer, she won the Sri Lanka Amateur Golf Championship three times and proudly represented Sri Lanka in the Queen Sirikit Ladies Asian Golf Championship.",
 
         career:
-            `Pam was a member of the Royal Colombo Golf Club (RCGC) and an honorary life member of the Nuwara Eliya Golf Club (NEGC). Her remarkable career was crowned by a Guinness World Record—she became the oldest woman to win a national golf championship, a testament to her skill and endurance in the game she loved.She authored the Centenary History Books of the Royal Colombo Golf Club, the Nuwara Eliya Golf Club, and the Sri Lanka Amateur Golf Championship, ensuring that future generations would understand and appreciate the rich traditions of the sport in the country.`,
+            `Pam was a member of the Royal Colombo Golf Club (RCGC) and an honorary life member of the Nuwara Eliya Golf Club (NEGC). Her remarkable career was crowned by a Guinness World Record—she became the oldest woman to win a national golf championship, a testament to her skill and endurance in the game she loved.
+She authored the Centenary History Books of the Royal Colombo Golf Club, the Nuwara Eliya Golf Club, and the Sri Lanka Amateur Golf Championship, ensuring that future generations would understand and appreciate the rich traditions of the sport in the country.
+`,
     },
     {
         id: 3,
@@ -45,10 +53,20 @@ const teamMembers = [
             "/Team/1.png",
         bio: "Tirusha Jesudason the second daughter of Pin & Pam Fernando is an Honorary Member of The Royal Colombo Golf Club, Life Member of Nuwara Eliya Golf Club,  and a member of the Victoria Golf Resort.",
         achievements: [
-            `As an amateur golfer, she won the Sri Lanka Amateur Ladies Golf Championship four times and the Royal Colombo Golf Club Championship five times. Her prowess extended beyond national borders, securing the All-India Amateur Ladies Golf Championship four times and winning amateur championships in Thailand, Hong Kong, Malaysia, and Indonesia. In the USA, she clinched the Utah State Ladies Amateur Championship twice and finished second individually in the Queen Sirikit All Asia Team Championship.`
+            `As an amateur golfer, she won the Sri Lanka Amateur Ladies Golf Championship four times and the Royal Colombo Golf Club Championship five times. Her prowess extended beyond national borders, securing the All-India Amateur Ladies Golf Championship four times and winning amateur championships in Thailand, Hong Kong, Malaysia, and Indonesia. 
+           `
+        ],
+        achievements2: [
+            ` 
+            In the USA, she clinched the Utah State Ladies Amateur Championship twice and finished second individually in the Queen Sirikit All Asia Team Championship.`
         ],
         career:
-            "In 1981, Tirusha turned professional, becoming the first woman in Southeast Asia to do so. Over an 11-year career on the European Ladies Professional Golf Tour, she achieved several top-10 finishes, with her best performance being fifth in the British Ladies Open Championship. She also competed in tournaments across the USA, Japan, and the Asian Ladies Professional circuits. After retiring from professional golf in 1991, she returned to Sri Lanka and served as a professional golf coach at the Royal Colombo Golf Club. She resigned from professional golf and regained her amateur status in 1998.",
+            "In 1981, Tirusha turned professional, becoming the first woman in Southeast Asia to do so. Over an 11-year career on the European Ladies Professional Golf Tour, she achieved several top-10 finishes, with her best performance being fifth in the British Ladies Open Championship.",
+        career2:
+            " She also competed in tournaments across the USA, Japan, and the Asian Ladies Professional circuits. ",
+        career3:
+            " After retiring from professional golf in 1991, she returned to Sri Lanka and served as a professional golf coach at the Royal Colombo Golf Club. She resigned from professional golf and regained her amateur status in 1998.",
+       
         currentOccupation:
             "Tirusha has contributed to golf course design, including a 6-hole pitch and putt course at Hunas Falls Hotel and assisting in the design of the Victoria Golf Course in Digana, Kandy.",
     },
@@ -57,14 +75,15 @@ const teamMembers = [
         name: "Priath Fernando",
         title: "A Visionary Leader for Sri Lankan Golf",
         image: "/Team/2.png",
-        bio: "His deep-rooted passion for the game, impressive playing career, and outstanding contributions in golf administration has set the path to developing Golf in Schools In addition to being a Life Member of the Royal Colombo Golf Club (RCGC), his memberships at Nuwara Eliya Golf Club, Victoria Golf Resort, Shangri-La Hambantota Golf Resort, and the prestigious Royal & Ancient Golf Club of St. Andrews, Scotland, will ensure that golfing tourists to Sri Lanka experience excellent service.",
+        bio: "His deep-rooted passion for the game, impressive playing career, and outstanding contributions in golf administration has set the path to developing Golf in Schools. In addition to being a Life Member of the Royal Colombo Golf Club (RCGC), his memberships at Nuwara Eliya Golf Club, Victoria Golf Resort, Shangri-La Hambantota Golf Resort, and the prestigious Royal & Ancient Golf Club of St. Andrews, Scotland, will ensure that golfing tourists to Sri Lanka experience excellent service.",
+        bio2: "In addition to being a Life Member of the Royal Colombo Golf Club (RCGC), his memberships at Nuwara Eliya Golf Club, Victoria Golf Resort, Shangri-La Hambantota Golf Resort, and the prestigious Royal & Ancient Golf Club of St. Andrews, Scotland, will ensure that golfing tourists to Sri Lanka experience excellent service.",
         achievements: [
             `He secured victories in the Sri Lanka Junior Golf Championship, the Royal Colombo Golf Club Championship, and the Nuwara Eliya Golf Club Championship. His talent also led him to represent Sri Lanka in international tournaments held in Sri Lanka, India, and Pakistan.`
         ],
         currentOccupation:
             `A Qualified Level 2 Rules Official, he has served Sri Lanka Golf Union (SLGU) as Honorary Secretary, Honorary Treasurer, Chairman of the Selection Committee, and President. His leadership has significantly contributed to the development and governance of golf in the country.
 At the Royal Colombo Golf Club, Priath’s dedication to the game is further exemplified by his tenure as both Captain and President, ensuring the continued growth and success of one of Sri Lanka’s most historic golf institutions.
-He is now pursuing the development of golf tourism through this company to give an unforgettable journey through Paradise with Golf
+
 `   ,
         currentOccupation2:
             `He is now pursuing the development of golf tourism through this company to give an unforgettable journey through Paradise with Golf`   },
@@ -158,7 +177,7 @@ export default function TeamGallery() {
         
 
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-                <DialogContent className="max-h-[500px] max-w-[320px] md:max-w-[384px] md:h-[70vh]  rounded-lg lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 !overflow-y-scroll bg-white">
+            <DialogContent className="max-h-[500px] max-w-[320px] md:max-w-[384px] md:h-[70vh] rounded-lg lg:max-h-[750px] lg:max-w-[900px] p-0 pb-12 overflow-y-scroll bg-white hide-scrollbar">
                     <div className="relative">
                         <Button
                             variant="ghost"
@@ -178,7 +197,7 @@ export default function TeamGallery() {
                                         src={selectedMember.image || "/placeholder.svg"}
                                         alt={selectedMember.name}
                                         fill
-                                        className=" !h-[318px] md:!h-[382px] lg:!w-96 lg:!h-96 rounded-xl"
+                                        className=" !h-[318px] md:!h-[382px] lg:!w-96 lg:!h-96 !rounded-xl lg:!rounded-r-xl"
 
                                     />
                                 </div>
@@ -190,15 +209,19 @@ export default function TeamGallery() {
 
                                 </div>
                             </div>
-                            <div className="px-2 lg:px-4 overflow-y-scroll lg:-mt-[110px] md:-mt-[50px]">
-                                <p className="text-gray-700 lg:mt-20 mb-6">{selectedMember.bio}</p>
+                            <div className="px-2 lg:px-4  lg:-mt-[110px] md:-mt-[50px]">
+                                <p className="text-gray-700 lg:mt-20 mb-1 text-justify">{selectedMember.bio}</p>
+                                <p className="text-gray-700  mb-4 text-justify">{selectedMember.bio2}</p>
 
                                 {selectedMember.achievements && selectedMember.achievements.length > 0 && (
                                     <>
                                         <h3 className="text-xl font-semibold text-[#c99c33] mt-6 mb-3">Amateur Golfing Achievements</h3>
                                         <ul className="list-none  text-gray-700 space-y-1">
                                             {selectedMember.achievements.map((achievement, index) => (
-                                                <li key={index}>{achievement}</li>
+                                                <li className="text-justify" key={index}>{achievement}</li>
+                                            ))}
+                                            {selectedMember.achievements2?.map((achievement, index) => (
+                                                <li className="text-justify" key={index}>{achievement}</li>
                                             ))}
                                         </ul>
                                     </>
@@ -206,8 +229,11 @@ export default function TeamGallery() {
 
                                 {selectedMember.career && (
                                     <>
-                                       {selectedMember.name==="Priath Fernando" || selectedMember.name==="Tirusha Jesudason" && <h3 className="text-xl font-semibold text-[#c99c33] mt-6 mb-3">Professional Golfing Career</h3>}
-                                        <p className="text-gray-700">{selectedMember.career}</p>
+                                       {selectedMember.name==="Priath Fernando" || selectedMember.name==="Tirusha Jesudason" && <h3 className="text-xl font-semibold text-[#c99c33] hide-scrollbar mt-6 space-y-4 mb-3">Professional Golfing Career</h3>}
+                                        <p className="text-gray-700 mb-1 hide-scrollbar text-justify">{selectedMember.career}</p>
+                                        <p className="text-gray-700 mb-1 hide-scrollbar text-justify">{selectedMember.career2}</p>
+                                        <p className="text-gray-700 text-justify">{selectedMember.career3}</p>
+                                        <p className="text-gray-700 text-justify">{selectedMember.career4}</p>
                                     </>
                                 )}
 
