@@ -115,9 +115,9 @@ export default function Home() {
                   <h2 className="font-bold mb-2">Tournament & Tour Inclusions</h2>
                   <ul className="space-y-1">
                     <li>6 Nights at luxurious hotels on Bed & Breakfast basis during the tournament.</li>
-                    <li>3 Nights at luxurious hotels on Bed & Breakfast basis during the post-tour.</li>
+                    <li>3 Nights at luxurious hotels on Bed & Breakfast basis during the post-tour   Nuwara Eliya OR Hambantota.</li>
                     <li>
-                      Nuwara Eliya OR Hambantota Lunches & Dinners provided on tournament days (excluding post-tour).
+                       Lunches & Dinners provided from day 2 to day 6.
                     </li>
                   </ul>
                 </div>
@@ -151,7 +151,8 @@ export default function Home() {
                   <h2 className="font-bold mb-2">Golf & On-Course Services:</h2>
                   <p className="mb-2">
                     All green fees and golf-related charges are covered during the tournament (excluding post-tour).
-                    Morning snacks provided on practice and tournament days. Two (1L) water bottles per person per day.
+                    Morning snacks provided on practice and tournament days.
+                    Two (1L) water bottles per person per day.
                     Emergency medical facilities on standby at the courses during practice and tournament dates.
                   </p>
                 </div>

@@ -94,7 +94,7 @@ const teamMembers = [
         currentOccupation2:
             `At the Royal Colombo Golf Club, Priath’s dedication to the game is further exemplified by his tenure as both Captain and President, ensuring the continued growth and success of one of Sri Lanka’s most historic golf institutions. `   ,
         currentOccupation3:
-            `He is now pursuing the development of golf tourism through this company to give an unforgettable journey through Paradise with Golf`   },
+            `He is now pursuing the development of golf tourism through this company to give an unforgettable journey through Paradise with Golf.`   },
 ]
 
 export default function TeamGallery() {
