@@ -72,7 +72,7 @@ export default function page() {
           href: "Knuckles Mountain",
         },
         {
-          name: "Sri Dalanda Maligawa",
+          name: "Sri Dalada Maligawa",
           image: "/packages/kandy/4.png",
           href: "Sri Dalanda Maligawa",
           className: "col-span-2 xl:max-h-[304px] xl:min-w-[826px]",
