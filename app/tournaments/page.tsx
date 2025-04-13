@@ -11,13 +11,13 @@ export default function Home() {
     <div className="min-h-screen  ">
       
       <div className=" md:!pt-[120px]   !pt-[100px] "></div>
-      <Image
+      {/* <Image
       src="/tournaments/Banner.webp"
       width={2500}
       height={2500}
       alt="Tournament Banner"
       className="w-full  object-cover"
-      />
+      /> */}
 
       
       {/* Tab Navigation */}
@@ -51,7 +51,14 @@ export default function Home() {
           {activeTab === "tournaments" && (
             <div className="">
               <Image
-              src="/tournaments/bannerdd.webp"
+              src="/pic2.jpg"
+              width={800}
+              height={400}
+              alt="banner"
+              className=""
+              />
+              <Image
+              src="/pic1.jpeg"
               width={800}
               height={400}
               alt="banner"
